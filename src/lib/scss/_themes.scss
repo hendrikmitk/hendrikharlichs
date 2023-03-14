@@ -1,6 +1,10 @@
 @import './mixins';
 
 @mixin base-theme {
+	@include define-color('header-background', $hadopelagic-water);
+	@include define-color('header-accent', $ice-ice-baby);
+	@include define-color('header-text', $doctor-white);
+
 	@include define-color('page-background', $doctor-white);
 	@include define-color('page-accent', $ice-ice-baby);
 	@include define-color('page-text', $diamond-black);

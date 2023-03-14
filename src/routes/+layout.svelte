@@ -1,6 +1,15 @@
 <script>
+	import { currentPage } from '$store';
+	import Header from '$lib/components/Header.svelte';
+
 	import '$lib/scss/global.scss';
+
+	export let data;
+
+	$: currentPage.set(data.path);
 </script>
+
+<Header />
 
 <main>
 	<slot />

@@ -7,7 +7,8 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
-			$config: 'src/lib/config.ts'
+			$config: 'src/lib/config.ts',
+			$store: 'src/lib/store.ts'
 		}
 	},
 

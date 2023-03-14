@@ -1,0 +1,11 @@
+@import './mixins';
+
+@mixin base-theme {
+	@include define-color('page-background', $doctor-white);
+	@include define-color('page-accent', $ice-ice-baby);
+	@include define-color('page-text', $diamond-black);
+}
+
+:root {
+	@include base-theme;
+}

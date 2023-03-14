@@ -1,0 +1,53 @@
+@import './breakpoints';
+
+/* Media queries */
+@mixin for($size) {
+	@if $size == phone-only {
+		@media (max-width: #{$phone-max-width}) {
+			@content;
+		}
+	} @else if $size == tablet-only {
+		@media (max-width: #{$tablet-max-width}) and (min-width: #{$tablet-min-width}) {
+			@content;
+		}
+	} @else if $size == tablet-and-up {
+		@media (min-width: #{$tablet-min-width}) {
+			@content;
+		}
+	} @else if $size == laptop-only {
+		@media (max-width: #{$laptop-max-width}) and (min-width: #{$laptop-min-width}) {
+			@content;
+		}
+	} @else if $size == laptop-and-up {
+		@media (min-width: #{$laptop-min-width}) {
+			@content;
+		}
+	} @else if $size == display-and-up {
+		@media (min-width: #{$display-min-width}) {
+			@content;
+		}
+	}
+}
+
+/* Color variable generator */
+@mixin define-color($title, $color) {
+	--color--#{$title}: #{$color};
+
+	--color--#{$title}-h: #{hue($color)};
+	--color--#{$title}-s: #{saturation($color)};
+	--color--#{$title}-l: #{lightness($color)};
+
+	--color--#{$title}-r: #{red($color)};
+	--color--#{$title}-g: #{green($color)};
+	--color--#{$title}-b: #{blue($color)};
+
+	--color--#{$title}-a: #{alpha($color)};
+
+	--color--#{$title}-hsl: #{hue($color)} #{saturation($color)} #{lightness($color)};
+	--color--#{$title}-hsla: #{hue($color)} #{saturation($color)} #{lightness($color)} #{alpha(
+			$color
+		)};
+
+	--color--#{$title}-rgb: #{red($color)}, #{green($color)}, #{blue($color)};
+	--color--#{$title}-rgba: #{red($color)}, #{green($color)}, #{blue($color)}, #{alpha($color)};
+}

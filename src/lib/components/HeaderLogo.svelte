@@ -11,7 +11,7 @@
 
 	img {
 		height: 24px;
-		width: 100%;
+		width: auto;
 
 		@include for(tablet-and-up) {
 			height: 32px;

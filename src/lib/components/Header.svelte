@@ -1,6 +1,7 @@
 <script>
 	import { navItems } from '$config';
 	import { isMenuOpen } from '$store';
+	import { closeMenuIfOpen } from '$utils';
 	import Hamburger from '$lib/components/Hamburger.svelte';
 	import HeaderLink from './HeaderLink.svelte';
 	import HeaderLogo from './HeaderLogo.svelte';
@@ -16,7 +17,9 @@
 
 <header class:expanded={$isMenuOpen}>
 	<nav>
-		<HeaderLogo href="/" />
+		<a href="/" on:click={closeMenuIfOpen}>
+			<HeaderLogo />
+		</a>
 		<ul class:open={$isMenuOpen}>
 			{#each navItems as navItem}
 				<HeaderLink href={navItem.route}>

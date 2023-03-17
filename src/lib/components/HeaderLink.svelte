@@ -1,11 +1,10 @@
 <script lang="ts">
-	import { currentPage, isMenuOpen } from '$store';
+	import { currentPage } from '$store';
+	import { closeMenuIfOpen } from '$utils';
 
 	export let href: string;
 
 	$: isCurrentPage = href === $currentPage;
-
-	const closeMenuIfOpen = () => $isMenuOpen && isMenuOpen.set(false);
 </script>
 
 <li>

@@ -1,13 +1,23 @@
 <script>
 	import { navItems } from '$config';
+	import { isMenuOpen } from '$store';
+	import Hamburger from '$lib/components/Hamburger.svelte';
 	import HeaderLink from './HeaderLink.svelte';
 	import HeaderLogo from './HeaderLogo.svelte';
+
+	const handleWindowResize = () => {
+		if ($isMenuOpen && window.innerWidth > 688) {
+			isMenuOpen.set(false);
+		}
+	};
 </script>
 
-<header>
+<svelte:window on:resize={handleWindowResize} />
+
+<header class:expanded={$isMenuOpen}>
 	<nav>
 		<HeaderLogo href="/" />
-		<ul>
+		<ul class:open={$isMenuOpen}>
 			{#each navItems as navItem}
 				<HeaderLink href={navItem.route}>
 					{navItem.title}
@@ -15,6 +25,7 @@
 			{/each}
 		</ul>
 	</nav>
+	<Hamburger />
 </header>
 
 <style lang="scss">
@@ -22,10 +33,30 @@
 
 	header {
 		background-color: var(--color--header-background);
-		color: var(--color--header-text);
-		padding: 0.75rem 0;
+
+		@include for(phone-only) {
+			padding: 1.2rem 0;
+
+			&::after {
+				background-color: var(--color--mobile-header-background);
+				color: var(--color--mobile-header-text);
+				content: '';
+				clip-path: polygon(0 0, 100% 0, 100% 65%, 0 75%);
+				inset: 0;
+				position: absolute;
+				transform: translateY(-100%);
+				transition: all 0.4s ease-in-out;
+			}
+
+			&.expanded {
+				&::after {
+					transform: translateY(0);
+				}
+			}
+		}
 
 		@include for(tablet-and-up) {
+			color: var(--color--header-text);
 			padding: 1rem 0;
 		}
 
@@ -38,15 +69,28 @@
 			@include for(tablet-and-up) {
 				margin: 0 auto;
 				max-width: 46rem;
-				width: 100%;
 			}
 
 			ul {
-				align-items: center;
-				display: flex;
-				gap: 2rem;
-				margin: 0;
-				padding: 0;
+				display: none;
+
+				&.open {
+					align-items: center;
+					display: flex;
+					flex-direction: column;
+					gap: 2.8rem;
+					inset: 0;
+					margin-top: 10.6rem;
+					position: absolute;
+					z-index: 1;
+				}
+
+				@include for(tablet-and-up) {
+					align-items: center;
+					display: flex;
+					flex-direction: row;
+					gap: 2rem;
+				}
 			}
 		}
 	}

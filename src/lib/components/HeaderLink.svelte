@@ -1,13 +1,15 @@
 <script lang="ts">
-	import { currentPage } from '$store';
+	import { currentPage, isMenuOpen } from '$store';
 
 	export let href: string;
 
 	$: isCurrentPage = href === $currentPage;
+
+	const closeMenuIfOpen = () => $isMenuOpen && isMenuOpen.set(false);
 </script>
 
 <li>
-	<a {href} class:active={isCurrentPage}>
+	<a {href} on:click={closeMenuIfOpen} class:active={isCurrentPage}>
 		<slot />
 	</a>
 </li>
@@ -18,35 +20,55 @@
 	li {
 		list-style: none;
 
+		@include for(phone-only) {
+			animation: fade_slide_scale 0.3s ease forwards;
+			opacity: 0;
+
+			@for $i from 1 through 5 {
+				&:nth-of-type(#{$i}) {
+					animation-delay: 0.15s + $i * 0.05ms;
+				}
+			}
+		}
+
 		a {
 			color: inherit;
-			display: block;
-			font-size: 20px;
-			position: relative;
+			font-family: var(--font--title);
+			font-size: 2.2rem;
+			font-weight: bold;
+			line-height: 1.1;
 			text-decoration: none;
 
-			&:hover {
-				color: var(--color--header-accent);
-			}
+			@include for(tablet-and-up) {
+				display: block;
+				font-family: var(--font--default);
+				font-size: 1.2rem;
+				font-weight: 400;
+				position: relative;
 
-			&::after {
-				background-color: var(--color--header-accent);
-				bottom: -0.175rem;
-				content: '';
-				height: 0.1rem;
-				left: 0;
-				position: absolute;
-				right: 0;
-				transform: scaleX(0);
-				transition: all 180ms ease-in-out 20ms;
-				visibility: hidden;
-				width: 100%;
-			}
+				&:hover {
+					color: var(--color--header-accent);
+				}
 
-			&.active {
 				&::after {
-					transform: scaleX(1);
-					visibility: visible;
+					background-color: var(--color--header-accent);
+					bottom: -0.4rem;
+					content: '';
+					height: 0.1rem;
+					left: 0;
+					position: absolute;
+					right: 0;
+					transform: scaleX(0);
+					transition: all 180ms ease-in-out 20ms;
+					visibility: hidden;
+					width: 100%;
+				}
+
+				&.active {
+					&::after {
+						transform: scaleX(1);
+						visibility: visible;
+					}
 				}
 			}
 		}

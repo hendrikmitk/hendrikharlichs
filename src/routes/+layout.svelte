@@ -2,7 +2,7 @@
 	import { currentPage } from '$store';
 	import Header from '$lib/components/Header.svelte';
 
-	import '$lib/scss/global.scss';
+	import '$lib/assets/scss/global.scss';
 
 	export let data;
 
@@ -16,7 +16,7 @@
 </main>
 
 <style lang="scss">
-	@import '$lib/scss/mixins.scss';
+	@import '$lib/assets/scss/mixins.scss';
 
 	main {
 		margin: 2rem 1rem;

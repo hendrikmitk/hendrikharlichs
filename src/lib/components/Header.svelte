@@ -32,7 +32,7 @@
 </header>
 
 <style lang="scss">
-	@import '$lib/scss/mixins.scss';
+	@import '$lib/assets/scss/mixins.scss';
 
 	header {
 		background-color: var(--color--header-background);

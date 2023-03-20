@@ -5,10 +5,11 @@
 	export let href: string;
 
 	$: isCurrentPage = href === $currentPage;
+	$: isBlogPost = href === '/blog' && $currentPage.startsWith(href + '/');
 </script>
 
 <li>
-	<a {href} on:click={closeMenuIfOpen} class:active={isCurrentPage}>
+	<a {href} on:click={closeMenuIfOpen} class:active={isCurrentPage || isBlogPost}>
 		<slot />
 	</a>
 </li>

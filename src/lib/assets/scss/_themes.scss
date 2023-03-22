@@ -12,13 +12,13 @@
 	@include define-color('page-accent', $ice-ice-baby);
 	@include define-color('page-text', $diamond-black);
 	@include define-color('page-text-small', $heavy-metal-armor);
-	
+
 	@include define-color('page-link-text', $heavy-metal-armor);
 	@include define-color('page-link-hover', $diamond-black);
 
 	@include define-color('page-qoute-border', $ice-ice-baby);
 	@include define-color('page-qoute-text', $diamond-black);
-	
+
 	@include define-color('page-code-inline-background', $pixel-white);
 	@include define-color('page-code-inline-text', $diamond-black);
 }

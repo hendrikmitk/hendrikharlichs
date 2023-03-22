@@ -24,3 +24,9 @@
 	font-weight: 600;
 	src: url('/fonts/karla-v23-latin-600.woff2') format('woff2');
 }
+
+:root {
+	--font--default: 'Karla', sans-serif;
+	--font--title: 'Archivo Black', sans-serif;
+	--font--code: 'Fira Code', Consolas, Monaco, monospace;
+}

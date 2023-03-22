@@ -1,0 +1,46 @@
+ol {
+	list-style-position: inside;
+
+	li > ol {
+		margin-left: 1rem;
+	}
+}
+
+ul {
+	list-style-position: inside;
+}
+
+p a {
+	color: var(--color--page-link-text);
+	text-decoration: underline currentcolor 1px;
+	text-underline-offset: 0.125rem;
+
+	&:hover {
+		color: var(--color--page-link-hover);
+	}
+}
+
+p code {
+	background-color: var(--color--page-code-inline-background);
+	border-radius: 0.25rem;
+	color: var(--color--page-code-inline-text);
+	font-family: var(--font--code);
+	font-size: 0.75rem;
+	padding: 0.25em 0.375em;
+	white-space: nowrap;
+}
+
+blockquote {
+	border-left: 0.25rem solid var(--color--page-qoute-border);
+	color: var(--color--page-qoute-text);
+	font-style: italic;
+	padding: 0.5rem 0.75rem;
+
+	@include for(tablet-and-up) {
+		padding: 1rem 1.5rem;
+	}
+
+	p {
+		margin: 0 !important;
+	}
+}

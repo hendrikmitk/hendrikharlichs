@@ -5,6 +5,7 @@
 @import './_typography.scss';
 @import './_themes.scss';
 @import './_mixins.scss';
+@import './_markdown.scss';
 
 :root {
 	font-family: var(--font--default);
@@ -20,8 +21,8 @@ body {
 	scroll-behavior: smooth;
 	width: 100%;
 
-	:is(h1, h2, h3, h4, h5, h6, p) {
-		margin: 0.6rem 0;
+	:is(h1, h2, h3, h4, h5, h6, p, blockquote) {
+		margin: 0.5rem 0;
 
 		@include for(tablet-and-up) {
 			margin: 1rem 0;

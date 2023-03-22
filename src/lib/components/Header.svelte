@@ -17,7 +17,7 @@
 
 <header class:expanded={$isMenuOpen}>
 	<nav>
-		<a href="/" on:click={closeMenuIfOpen}>
+		<a href="/" on:click={closeMenuIfOpen} title="Logo">
 			<HeaderLogo />
 		</a>
 		<ul class:open={$isMenuOpen}>

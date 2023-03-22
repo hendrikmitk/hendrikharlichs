@@ -66,6 +66,7 @@
 			a {
 				color: inherit;
 				text-decoration: none;
+				text-transform: unset;
 
 				&:hover {
 					color: var(--color--page-accent);

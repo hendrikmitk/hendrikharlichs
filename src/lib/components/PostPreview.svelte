@@ -13,7 +13,7 @@
 			{formatDate(post.created)}
 		</small>
 
-		<h2 class="title">
+		<h2>
 			<a href={targetUrl} data-sveltekit-preload-code>
 				{post.title}
 			</a>
@@ -55,13 +55,14 @@
 		}
 
 		small {
-			color: var(--color--page-text-light);
+			color: var(--color--page-text-small);
 			display: block;
 			text-transform: uppercase;
 		}
 
-		.title {
+		h2 {
 			margin-top: 0;
+			margin: 0 0 0.5rem;
 
 			a {
 				color: inherit;
@@ -74,14 +75,18 @@
 			}
 		}
 
+		p {
+			margin: 0.5rem 0 0.5rem;
+		}
+
 		a {
-			color: var(--color--page-text-light);
-			text-decoration: underline currentcolor 1px;
+			color: var(--color--page-link-text);
+			text-decoration: underline currentcolor 0.125rem;
 			text-transform: uppercase;
-			text-underline-offset: 0.2rem;
+			text-underline-offset: 0.25rem;
 
 			&:hover {
-				color: var(--color--page-text);
+				color: var(--color--page-link-hover);
 			}
 		}
 	}

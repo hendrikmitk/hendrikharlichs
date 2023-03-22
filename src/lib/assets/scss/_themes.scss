@@ -11,7 +11,10 @@
 	@include define-color('page-background', $doctor-white);
 	@include define-color('page-accent', $ice-ice-baby);
 	@include define-color('page-text', $diamond-black);
-	@include define-color('page-text-light', $mountain-haze);
+	@include define-color('page-text-small', $heavy-metal-armor);
+	
+	@include define-color('page-link-text', $heavy-metal-armor);
+	@include define-color('page-link-hover', $diamond-black);
 }
 
 :root {

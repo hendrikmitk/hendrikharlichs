@@ -10,7 +10,9 @@
 <li>
 	<article>
 		<small>
-			{formatDate(post.created)}
+			<time datetime={post.created.substring(0, 10)}>
+				{formatDate(post.created)}
+			</time>
 		</small>
 
 		<h2>
@@ -44,6 +46,7 @@
 		small {
 			color: var(--color--page-text-small);
 			display: block;
+			font-size: 0.875rem;
 			text-transform: uppercase;
 		}
 
@@ -57,6 +60,7 @@
 
 		a:not(h2 > a) {
 			color: var(--color--page-link-text);
+			font-size: 0.875rem;
 			text-decoration: underline currentcolor 0.125rem;
 			text-transform: uppercase;
 			text-underline-offset: 0.25rem;

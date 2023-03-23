@@ -23,12 +23,12 @@
 	<div>
 		<small>
 			<b>Published:</b>
-			{formatDate(created)}
+			<time datetime={created.substring(0, 10)}>{formatDate(created)}</time>
 		</small>
 		{#if updated}
 			<small>
 				<b>Updated:</b>
-				{formatDate(updated)}
+				<time datetime={updated.substring(0, 10)}>{formatDate(updated)}</time>
 			</small>
 		{/if}
 	</div>
@@ -61,6 +61,7 @@
 		small {
 			color: var(--color--page-text-small);
 			display: block;
+			font-size: 0.875rem;
 			text-transform: uppercase;
 		}
 	}

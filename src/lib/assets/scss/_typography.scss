@@ -4,6 +4,16 @@
 	font-family: var(--font--title);
 	font-weight: bold;
 	line-height: 1.3;
+
+	a {
+		color: var(--color--page-text);
+		text-decoration: none;
+		text-transform: unset;
+
+		&:hover {
+			color: var(--color--page-accent);
+		}
+	}
 }
 
 h1 {

@@ -63,23 +63,13 @@
 		h2 {
 			margin-top: 0;
 			margin: 0 0 0.5rem;
-
-			a {
-				color: inherit;
-				text-decoration: none;
-				text-transform: unset;
-
-				&:hover {
-					color: var(--color--page-accent);
-				}
-			}
 		}
 
 		p {
 			margin: 0.5rem 0 0.5rem;
 		}
 
-		a {
+		a:not(h2 > a) {
 			color: var(--color--page-link-text);
 			text-decoration: underline currentcolor 0.125rem;
 			text-transform: uppercase;

@@ -9,6 +9,7 @@ const config = {
 		alias: {
 			$config: 'src/lib/config.ts',
 			$store: 'src/lib/store.ts',
+			$types: 'src/lib/types',
 			$utils: 'src/lib/assets/utils'
 		}
 	},

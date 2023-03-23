@@ -32,25 +32,12 @@
 
 	li {
 		list-style: none;
-		margin: 2rem 0;
 
-		@include for(tablet-and-up) {
-			margin: 4rem 0;
-		}
-
-		&:first-of-type {
+		&:not(&:first-of-type) {
 			margin-top: 1rem;
 
 			@include for(tablet-and-up) {
 				margin-top: 2rem;
-			}
-		}
-
-		&:last-of-type {
-			margin-bottom: 1rem;
-
-			@include for(tablet-and-up) {
-				margin-bottom: 2rem;
 			}
 		}
 
@@ -61,7 +48,6 @@
 		}
 
 		h2 {
-			margin-top: 0;
 			margin: 0 0 0.5rem;
 		}
 

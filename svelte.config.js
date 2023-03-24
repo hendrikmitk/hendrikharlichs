@@ -8,6 +8,7 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			$config: 'src/lib/config.ts',
+			$data: 'src/lib/data',
 			$store: 'src/lib/store.ts',
 			$types: 'src/lib/types',
 			$utils: 'src/lib/assets/utils'

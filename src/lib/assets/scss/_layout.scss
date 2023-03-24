@@ -21,3 +21,9 @@
 		margin: 0.75rem 0;
 	}
 }
+
+:is(ul, ol) {
+	ul, ol {
+		margin: 0;
+	}
+}

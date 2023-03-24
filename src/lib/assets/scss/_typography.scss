@@ -59,3 +59,9 @@ h5 {
 h6 {
 	font-size: 1rem;
 }
+
+small {
+	color: var(--color--page-text-small);
+	font-size: 0.875rem;
+	text-transform: uppercase;
+}

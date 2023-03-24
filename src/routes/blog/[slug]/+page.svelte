@@ -59,10 +59,7 @@
 		}
 
 		small {
-			color: var(--color--page-text-small);
 			display: block;
-			font-size: 0.875rem;
-			text-transform: uppercase;
 		}
 	}
 </style>

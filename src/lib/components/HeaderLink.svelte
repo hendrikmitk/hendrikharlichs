@@ -34,16 +34,15 @@
 		a {
 			color: inherit;
 			font-family: var(--font--title);
-			font-size: 2.2rem;
+			font-size: 2.5rem;
 			font-weight: bold;
-			line-height: 1.1;
 			text-decoration: none;
 
 			@include for(tablet-and-up) {
 				display: block;
 				font-family: var(--font--default);
-				font-size: 1.2rem;
-				font-weight: 400;
+				font-size: 1.25rem;
+				font-weight: normal;
 				position: relative;
 
 				&:hover {
@@ -52,9 +51,9 @@
 
 				&::after {
 					background-color: var(--color--header-accent);
-					bottom: -0.4rem;
+					bottom: -0.25rem;
 					content: '';
-					height: 0.1rem;
+					height: 0.125rem;
 					left: 0;
 					position: absolute;
 					right: 0;

@@ -6,11 +6,13 @@
 @import './_themes.scss';
 @import './prism.scss';
 @import './_mixins.scss';
+@import './_layout.scss';
 @import './_markdown.scss';
 
 :root {
 	font-family: var(--font--default);
 	font-size: 1rem;
+	line-height: 1.5;
 }
 
 body {
@@ -21,14 +23,6 @@ body {
 	overflow-x: hidden;
 	scroll-behavior: smooth;
 	width: 100%;
-
-	:is(h1, h2, h3, h4, h5, h6, p, blockquote) {
-		margin: 0.5rem 0;
-
-		@include for(tablet-and-up) {
-			margin: 1rem 0;
-		}
-	}
 }
 
 #root {

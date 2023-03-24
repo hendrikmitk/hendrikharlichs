@@ -1,0 +1,23 @@
+:is(h1) {
+	margin: 1.5rem 0;
+
+	@include for(tablet-and-up) {
+		margin: 2.5rem 0;
+	}
+}
+
+:is(h2, h3) {
+	margin: 1rem 0 0.5rem;
+
+	@include for(tablet-and-up) {
+		margin: 1.5rem 0 0.75rem;
+	}
+}
+
+:is(p, ul, ol, blockquote, pre) {
+	margin: 0.5rem 0;
+
+	@include for(tablet-and-up) {
+		margin: 0.75rem 0;
+	}
+}

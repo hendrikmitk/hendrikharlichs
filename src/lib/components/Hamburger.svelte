@@ -47,7 +47,7 @@
 		.hamburger {
 			position: absolute;
 			right: 1rem;
-			top: 1.2rem;
+			top: 1.25rem;
 			visibility: visible;
 			z-index: 2;
 		}

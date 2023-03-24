@@ -38,7 +38,7 @@
 		background-color: var(--color--header-background);
 
 		@include for(phone-only) {
-			padding: 1.2rem 0;
+			padding: 1.25rem 0;
 
 			&::after {
 				background-color: var(--color--mobile-header-background);
@@ -81,9 +81,9 @@
 					align-items: center;
 					display: flex;
 					flex-direction: column;
-					gap: 2.8rem;
+					gap: 2.5rem;
 					inset: 0;
-					margin-top: 10.6rem;
+					margin-top: 10rem;
 					position: absolute;
 					z-index: 1;
 				}

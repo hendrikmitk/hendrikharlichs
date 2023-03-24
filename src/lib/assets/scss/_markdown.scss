@@ -22,9 +22,9 @@ ul {
 	}
 }
 
-p a {
+a {
 	color: var(--color--page-link-text);
-	text-decoration: underline currentcolor 1px;
+	text-decoration: underline currentcolor 0.0625rem;
 	text-underline-offset: 0.125rem;
 
 	&:hover {
@@ -33,7 +33,7 @@ p a {
 	}
 }
 
-p code {
+code {
 	background-color: var(--color--page-code-inline-background);
 	border-radius: 0.25rem;
 	color: var(--color--page-code-inline-text);

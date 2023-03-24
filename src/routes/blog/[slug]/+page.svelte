@@ -39,19 +39,30 @@
 <style lang="scss">
 	@import '$lib/assets/scss/mixins.scss';
 
-	div {
-		display: inline-block;
-		padding-top: 0.25rem;
-		position: relative;
+	h1 {
+		margin-bottom: 0.5rem;
 
 		@include for(tablet-and-up) {
-			padding-top: 0.5rem;
+			margin-bottom: 1rem;
+		}
+	}
+
+	div {
+		display: inline-block;
+		margin-bottom: 0.5rem;
+		padding-top: 0.75rem;
+		position: relative;
+		z-index: -1;
+
+		@include for(tablet-and-up) {
+			margin-bottom: 1rem;
+			padding-top: 1.25rem;
 		}
 
 		&::before {
 			background-color: var(--color--page-accent);
 			content: '';
-			height: 0.1rem;
+			height: 0.125rem;
 			left: 0;
 			position: absolute;
 			right: 0;

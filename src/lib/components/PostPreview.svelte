@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Post } from '$types';
 	import { formatDate } from '$utils';
+	import PostIcon from '$lib/assets/icons/Post.svelte';
 
 	export let post: Post;
 
@@ -25,7 +26,10 @@
 			{post.summary}
 		</p>
 
-		<a href={targetUrl} data-sveltekit-preload-code> Read more </a>
+		<a href={targetUrl} data-sveltekit-preload-code>
+			<PostIcon />
+			Read more
+		</a>
 	</article>
 </li>
 
@@ -36,10 +40,10 @@
 		list-style: none;
 
 		&:not(&:first-of-type) {
-			margin-top: 1rem;
+			margin-top: 2rem;
 
 			@include for(tablet-and-up) {
-				margin-top: 2rem;
+				margin-top: 4rem;
 			}
 		}
 
@@ -48,22 +52,19 @@
 		}
 
 		h2 {
-			margin: 0 0 0.5rem;
-		}
-
-		p {
-			margin: 0.5rem 0 0.5rem;
+			margin-top: 0;
 		}
 
 		a:not(h2 > a) {
-			color: var(--color--page-link-text);
+			align-items: center;
+			display: inline-flex;
 			font-size: 0.875rem;
-			text-decoration: underline currentcolor 0.125rem;
+			gap: 0.25rem;
 			text-transform: uppercase;
-			text-underline-offset: 0.25rem;
 
-			&:hover {
-				color: var(--color--page-link-hover);
+			:global(svg) {
+				height: 1rem;
+				width: auto;
 			}
 		}
 	}

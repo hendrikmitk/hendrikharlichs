@@ -1,13 +1,25 @@
 ol {
 	list-style-position: inside;
+	list-style-type: decimal;
 
-	li > ol {
-		margin-left: 1rem;
+	ol {
+		list-style-type: lower-latin;
+		padding-left: 1rem;
+	}
+
+	::marker {
+		color: var(--color--page-accent);
+		font-weight: bold;
 	}
 }
 
 ul {
 	list-style-position: inside;
+	list-style-type: square;
+
+	::marker {
+		color: var(--color--page-accent);
+	}
 }
 
 p a {

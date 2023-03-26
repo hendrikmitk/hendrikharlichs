@@ -1,5 +1,6 @@
 <script>
 	import { currentPage } from '$store';
+	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
 
 	import '$lib/assets/scss/global.scss';
@@ -14,6 +15,8 @@
 <main>
 	<slot />
 </main>
+
+<Footer />
 
 <style lang="scss">
 	@import '$lib/assets/scss/mixins.scss';

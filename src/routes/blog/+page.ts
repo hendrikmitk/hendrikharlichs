@@ -1,7 +1,9 @@
 import type { Post } from '$types';
 
 export const load = () => {
-	const markdownFiles = import.meta.glob('/src/lib/posts/*md', { eager: true });
+	const markdownFiles = import.meta.glob('/src/lib/posts/*md', {
+		eager: true
+	});
 
 	const posts: Post[] = [];
 
@@ -16,7 +18,9 @@ export const load = () => {
 		}
 	}
 
-	posts.sort((a, b) => Number(new Date(b.created)) - Number(new Date(a.created)));
+	posts.sort(
+		(a, b) => Number(new Date(b.created)) - Number(new Date(a.created))
+	);
 
 	return {
 		posts

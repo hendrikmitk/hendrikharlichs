@@ -8,14 +8,18 @@
 
 <li class="job">
 	<h2 class="job__company">
-		<a href={job.url} target="_blank" rel="noopener noreferrer">{job.company}</a>
+		<a href={job.url} target="_blank" rel="noopener noreferrer">
+			{job.company}
+		</a>
 	</h2>
 
 	<ul class="job__positions">
 		{#each job.positions as position}
 			<li class="position">
 				<h3 class="position__title">{position.jobTitle}</h3>
-				<p class="position__description">{position.description}</p>
+				<p class="position__description">
+					{position.description}
+				</p>
 				{#if position.duties}
 					<ul class="position__duties">
 						{#each position.duties as duty}
@@ -29,7 +33,9 @@
 						{formatDate(position.dateBegin, 'short')}
 					</time>
 					–
-					<time datetime={position.dateEnd ? position.dateEnd : getDateString()}>
+					<time
+						datetime={position.dateEnd ? position.dateEnd : getDateString()}
+					>
 						{position.dateEnd ? formatDate(position.dateEnd, 'short') : 'today'}
 					</time>
 				</small>

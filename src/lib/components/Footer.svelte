@@ -27,9 +27,14 @@
 		</FooterIcon>
 	</div>
 	<div class="footer__credits">
-		Powered by <a href="https://kit.svelte.dev/" target="_blank" rel="noopener noreferrer"
-			>SvelteKit</a
-		>. Hosted on <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a>.
+		Powered by <a
+			href="https://kit.svelte.dev/"
+			target="_blank"
+			rel="noopener noreferrer">SvelteKit</a
+		>. Hosted on
+		<a href="https://vercel.com/" target="_blank" rel="noopener noreferrer"
+			>Vercel</a
+		>.
 	</div>
 	<div class="footer__links">
 		<a href="/imprint">Imprint</a> |

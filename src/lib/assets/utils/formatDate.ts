@@ -1,4 +1,7 @@
-const formatDate = (date: string, notation: 'long' | 'short' = 'long'): string => {
+const formatDate = (
+	date: string,
+	notation: 'long' | 'short' = 'long'
+): string => {
 	const isShort: boolean = notation === 'short';
 
 	return new Date(date).toLocaleDateString('en-US', {

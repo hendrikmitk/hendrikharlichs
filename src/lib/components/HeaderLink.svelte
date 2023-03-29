@@ -9,7 +9,11 @@
 </script>
 
 <li>
-	<a {href} on:click={closeMenuIfOpen} class:active={isCurrentPage || isBlogPost}>
+	<a
+		{href}
+		on:click={closeMenuIfOpen}
+		class:active={isCurrentPage || isBlogPost}
+	>
 		<slot />
 	</a>
 </li>

@@ -7,7 +7,9 @@
 </script>
 
 <li class="job">
-	<h2 class="job__company"><a href={job.url}>{job.company}</a></h2>
+	<h2 class="job__company">
+		<a href={job.url} target="_blank" rel="noopener noreferrer">{job.company}</a>
+	</h2>
 
 	<ul class="job__positions">
 		{#each job.positions as position}

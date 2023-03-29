@@ -7,8 +7,6 @@
 </a>
 
 <style lang="scss">
-	@import '$lib/assets/scss/colors.scss';
-
 	a {
 		:global(svg) {
 			height: 1.5rem;

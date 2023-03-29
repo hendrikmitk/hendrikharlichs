@@ -23,7 +23,7 @@
 }
 
 :is(ul, ol) {
-	ul,
+	> ul,
 	ol {
 		margin: 0;
 	}

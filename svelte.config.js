@@ -11,7 +11,7 @@ const config = {
 			$data: 'src/lib/data',
 			$store: 'src/lib/store.ts',
 			$types: 'src/lib/types',
-			$utils: 'src/lib/assets/utils'
+			$utils: 'src/lib/utils'
 		}
 	},
 

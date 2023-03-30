@@ -12,7 +12,7 @@
 </svg>
 
 <style lang="scss">
-	@import '$lib/assets/scss/mixins.scss';
+	@import '$lib/scss/mixins.scss';
 
 	svg {
 		color: var(--color--header-accent);

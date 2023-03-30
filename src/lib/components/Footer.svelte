@@ -47,7 +47,7 @@
 </footer>
 
 <style lang="scss">
-	@import '$lib/assets/scss/mixins.scss';
+	@import '$lib/scss/mixins.scss';
 
 	.footer {
 		align-items: center;

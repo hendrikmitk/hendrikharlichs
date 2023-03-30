@@ -37,7 +37,7 @@
 </article>
 
 <style lang="scss">
-	@import '$lib/assets/scss/mixins.scss';
+	@import '$lib/scss/mixins.scss';
 
 	h1 {
 		margin-bottom: 0.5rem;

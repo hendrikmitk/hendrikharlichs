@@ -19,7 +19,7 @@
 </li>
 
 <style lang="scss">
-	@import '$lib/assets/scss/mixins.scss';
+	@import '$lib/scss/mixins.scss';
 
 	li {
 		list-style: none;

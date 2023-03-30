@@ -3,7 +3,7 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
 
-	import '$lib/assets/scss/global.scss';
+	import '$lib/scss/global.scss';
 
 	export let data;
 
@@ -19,7 +19,7 @@
 <Footer />
 
 <style lang="scss">
-	@import '$lib/assets/scss/mixins.scss';
+	@import '$lib/scss/mixins.scss';
 
 	main {
 		margin: 2rem 1rem;

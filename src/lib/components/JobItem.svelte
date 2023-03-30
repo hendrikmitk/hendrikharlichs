@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Employer } from '$types';
 	import { formatDate, getDateString } from '$utils';
-	import CalendarIcon from '$lib/assets/icons/Calendar.svelte';
+	import CalendarIcon from '$lib/icons/Calendar.svelte';
 
 	export let job: Employer;
 </script>

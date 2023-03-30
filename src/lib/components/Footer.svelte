@@ -1,9 +1,9 @@
 <script lang="ts">
 	import FooterIcon from './FooterIcon.svelte';
-	import GithubIcon from '$lib/assets/icons/Github.svelte';
-	import LinkedinIcon from '$lib/assets/icons/Linkedin.svelte';
-	import MailIcon from '$lib/assets/icons/Mail.svelte';
-	import MastodonIcon from '$lib/assets/icons/Mastodon.svelte';
+	import GithubIcon from '$lib/icons/Github.svelte';
+	import LinkedinIcon from '$lib/icons/Linkedin.svelte';
+	import MailIcon from '$lib/icons/Mail.svelte';
+	import MastodonIcon from '$lib/icons/Mastodon.svelte';
 
 	const currentYear: number = new Date().getFullYear();
 </script>

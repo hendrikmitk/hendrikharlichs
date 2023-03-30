@@ -18,7 +18,7 @@
 </div>
 
 <style lang="scss">
-	@import '$lib/scss/mixins.scss';
+	@import '$lib/scss/abstracts/mixins.scss';
 
 	/*
    * Largely adopted from Hamburgers

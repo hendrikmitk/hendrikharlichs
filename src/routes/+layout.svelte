@@ -19,7 +19,7 @@
 <Footer />
 
 <style lang="scss">
-	@import '$lib/scss/mixins.scss';
+	@import '$lib/scss/abstracts/mixins.scss';
 
 	main {
 		margin: 2rem 1rem;

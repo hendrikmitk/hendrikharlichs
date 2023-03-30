@@ -1,4 +1,4 @@
-@import './mixins';
+@import '../abstracts/mixins';
 
 :is(h1, h2, h3) {
 	font-weight: bold;

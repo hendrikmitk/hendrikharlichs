@@ -45,7 +45,7 @@
 </li>
 
 <style lang="scss">
-	@import '$lib/scss/mixins.scss';
+	@import '$lib/scss/abstracts/mixins.scss';
 
 	.job {
 		list-style: none;

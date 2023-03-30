@@ -47,8 +47,6 @@
 </footer>
 
 <style lang="scss">
-	@import '$lib/scss/mixins.scss';
-
 	.footer {
 		align-items: center;
 		display: flex;

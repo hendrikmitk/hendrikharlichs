@@ -18,8 +18,6 @@
 </div>
 
 <style lang="scss">
-	@import '$lib/scss/abstracts/mixins.scss';
-
 	/*
    * Largely adopted from Hamburgers
    * Tasty CSS-animated hamburgers

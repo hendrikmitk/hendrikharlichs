@@ -32,8 +32,6 @@
 </header>
 
 <style lang="scss">
-	@import '$lib/scss/abstracts/mixins.scss';
-
 	header {
 		background-color: var(--color--header-background);
 

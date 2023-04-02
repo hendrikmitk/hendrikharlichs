@@ -37,8 +37,6 @@
 </article>
 
 <style lang="scss">
-	@import '$lib/scss/abstracts/mixins.scss';
-
 	h1 {
 		margin-bottom: 0.5rem;
 

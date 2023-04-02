@@ -34,8 +34,6 @@
 </li>
 
 <style lang="scss">
-	@import '$lib/scss/abstracts/mixins.scss';
-
 	li {
 		list-style: none;
 

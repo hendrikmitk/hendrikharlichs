@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Employer } from '$types';
-	import { formatDate, getDateString } from '$utils';
+	import { formatDate } from '$utils';
 	import CalendarIcon from '$lib/icons/Calendar.svelte';
 
 	export let job: Employer;
@@ -29,15 +29,20 @@
 				{/if}
 				<small class="position__meta">
 					<CalendarIcon />
-					<time datetime={position.dateBegin}>
-						{formatDate(position.dateBegin, 'short')}
-					</time>
-					–
-					<time
-						datetime={position.dateEnd ? position.dateEnd : getDateString()}
-					>
-						{position.dateEnd ? formatDate(position.dateEnd, 'short') : 'today'}
-					</time>
+					{#if position.dateEnd}
+						<time datetime={position.dateBegin}>
+							{formatDate(position.dateBegin, 'short')}
+						</time>
+						–
+						<time datetime={position.dateEnd}>
+							{formatDate(position.dateEnd, 'short')}
+						</time>
+					{:else}
+						Since
+						<time datetime={position.dateBegin}>
+							{formatDate(position.dateBegin, 'short')}
+						</time>
+					{/if}
 				</small>
 			</li>
 		{/each}

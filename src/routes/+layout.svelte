@@ -1,13 +1,21 @@
 <script>
 	import { currentPage } from '$store';
+	import { navItems } from '$config';
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
 
 	import '$lib/scss/global.scss';
 
+	import { onMount } from 'svelte';
+	import { preloadCode } from '$app/navigation';
+
 	export let data;
 
 	$: currentPage.set(data.path);
+
+	onMount(() => {
+		preloadCode(...navItems.map((item) => item.route), '/imprint');
+	});
 </script>
 
 <Header />

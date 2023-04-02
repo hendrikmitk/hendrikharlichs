@@ -12,5 +12,11 @@
 			height: 1.5rem;
 			width: auto;
 		}
+
+		&[href^='http'] {
+			&::after {
+				all: unset;
+			}
+		}
 	}
 </style>

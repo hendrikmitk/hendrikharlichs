@@ -11,10 +11,10 @@ export const jobs: Employer[] = [
 				description:
 					'Development and operation of the comparison and application platform for public health insurers.',
 				duties: [
-					'Maintenance of customer frontends as well as back-office applications',
-					'Product development following agile methods and clean code principles',
-					'Collaboration with product management and MD to drive customer value',
-					'Management of CI/CD toolchains to increase the level of automation'
+					'Development of customer frontends, APIs and back-office applications',
+					'Product engineering following agile methods and clean code principles',
+					'Cooperation with product management and MD to drive customer value',
+					'Maintenance of CI/CD pipelines to increase automation level and pace'
 				],
 				jobTitle: 'Junior Software Developer'
 			}
@@ -55,7 +55,7 @@ export const jobs: Employer[] = [
 				dateBegin: '2017-07',
 				dateEnd: '2020-01',
 				description:
-					'Requirements engineering as well as technical supervision and release planning for the ongoing development of the on-board and landside infotainment infrastructure of a German cruise company.',
+					'Requirements engineering as well as technical supervision and release planning for the ongoing development of the on-board and landside infotainment infrastructure of a leading cruise line.',
 				jobTitle: 'Product Owner'
 			}
 		],

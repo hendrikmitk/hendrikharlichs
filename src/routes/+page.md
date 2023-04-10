@@ -16,7 +16,7 @@
 
 # Hi, I'm Hendrik Harlichs.
 
-I am a **Software Developer** living in Hamburg, Germany. I currently work at [CHECK24](https://jobs.check24.de/) where I am mainly dealing with the ins and outs of Angular, TypeScript and PHP.
+I am a **Software Developer** living in Hamburg, Germany. I currently work at [CHECK24](https://jobs.check24.de/) where I am mainly dealing with the ins and outs of Angular, TypeScript and PHP. I build stuff on the web using both established and cutting-edge technologies, however, I have a soft spot for the front-end.
 
 I have been a project manager, product owner, online editor, and even a car mechanic, but solving real-world problems and building useful, value-added web applications is what I enjoy the most!
 

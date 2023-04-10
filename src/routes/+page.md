@@ -14,17 +14,14 @@
 <meta name="twitter:description" content={description} />
 </svelte:head>
 
-# Home
+# Hi, I'm Hendrik Harlichs.
 
-This is an example _markdown_ in page content!
+I am a **Software Developer** living in Hamburg, Germany. I currently work at [CHECK24](https://jobs.check24.de/) where I am mainly dealing with the ins and outs of Angular, TypeScript and PHP.
 
-- We
-- **Can**
-- ~~Have~~
-- Lists _too!_
+I have been a project manager, product owner, online editor, and even a car mechanic, but solving real-world problems and building useful, value-added web applications is what I enjoy the most!
 
-Find and edit this page here:
+Being in such different positions in corporate environments as well as on agency-side helped me to evolve a holistic view on both processes and the product itself that characterizes my way of working.
 
-```
-src/routes/+page.md
-```
+## Contact
+
+Do you have feedback or questions? Contact me by [email](mailto:hi@hendrikharlichs.de) or drop me a line on [Mastodon](https://mas.to/@hendrik).

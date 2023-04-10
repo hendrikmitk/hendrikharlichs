@@ -14,7 +14,7 @@
 <meta name="twitter:description" content={description} />
 </svelte:head>
 
-# Hi, I'm Hendrik Harlichs.
+# Hi, I am Hendrik Harlichs.
 
 I am a **Software Developer** living in Hamburg, Germany. I currently work at [CHECK24](https://jobs.check24.de/) where I am mainly dealing with the ins and outs of Angular, TypeScript and PHP. I build stuff on the web using both established and cutting-edge technologies, however, I have a soft spot for the front-end.
 

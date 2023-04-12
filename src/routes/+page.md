@@ -22,6 +22,8 @@ I have been a project manager, product owner, online editor, and even a car mech
 
 Being in such different positions in corporate environments as well as on agency-side helped me to evolve a holistic view on both processes and the product itself that characterizes my way of working.
 
+Having started my developer career in the era of JavaScript UI frameworks and serverless deployment platforms, I am amazed by the low-threshold nature of modern web development. Understanding established concepts and computer science fundamentals as well as learning mature technologies are now the wind in my sails as I continue my journey as a developer.
+
 ## Contact
 
 Do you have feedback or questions? Contact me by [email](mailto:hi@hendrikharlichs.de) or drop me a line on [Mastodon](https://mas.to/@hendrik).

@@ -11,7 +11,7 @@
 
 <footer class="footer">
 	<div class="footer__copyright">
-		© {currentYear.toString()} Hendrik Harlichs. Made in Hamburg
+		© {currentYear.toString()} Hendrik Harlichs. Made in Hamburg.
 	</div>
 	<div class="footer__social">
 		<FooterIcon href="https://mas.to/@hendrik">

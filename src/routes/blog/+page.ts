@@ -5,18 +5,20 @@ export const load = () => {
 		eager: true
 	});
 
-	const posts: Post[] = [];
+	const allPosts: Post[] = [];
 
 	for (const path in markdownFiles) {
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		const post = markdownFiles[path] as any;
 		if (post) {
-			posts.push({
+			allPosts.push({
 				slug: path.split('/').pop()?.slice(0, -3),
 				...post.metadata
 			});
 		}
 	}
+
+	const posts = allPosts.filter((post) => !post.draft);
 
 	posts.sort(
 		(a, b) => Number(new Date(b.created)) - Number(new Date(a.created))

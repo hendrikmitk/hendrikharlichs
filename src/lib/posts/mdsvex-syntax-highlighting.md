@@ -3,6 +3,7 @@ title: Syntax highlighting with MDSveX
 created: 2023-03-18
 updated:
 summary: Check out MDSveX's built-in syntax highlighting. This article will give you an idea of how to dress up your code snippets.
+draft: false
 ---
 
 MDSveX has automatic, built-in syntax highlighting with Prism.js. Just include the language name after the triple backticks, like so:

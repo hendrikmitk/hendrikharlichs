@@ -3,6 +3,7 @@ title: Container Queries Are Finally Here
 created: 2023-03-19
 updated: 2023-03-20
 summary: Container queries are now supported in all major browsers. Responsive web development will never be the same again.
+draft: false
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non enim praesent elementum facilisis leo vel.

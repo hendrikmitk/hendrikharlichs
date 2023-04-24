@@ -31,7 +31,7 @@
 		margin: 2rem 1rem;
 
 		@include for(tablet-and-up) {
-			margin: 4rem auto;
+			margin: 4rem auto 2rem;
 			width: 100%;
 			max-width: 46rem;
 		}

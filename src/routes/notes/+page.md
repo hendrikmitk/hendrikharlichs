@@ -11,12 +11,12 @@
 
 <svelte:head>
 
-<title>Blog | { siteTitle }</title>
+<title>Notes | { siteTitle }</title>
 <meta data-key="description" name="description" content={description} />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Blog" />
+<meta property="og:title" content="Notes" />
 <meta property="og:description" content={description} />
-<meta name="twitter:title" content="Blog" />
+<meta name="twitter:title" content="Notes" />
 <meta name="twitter:description" content={description} />
 </svelte:head>
 

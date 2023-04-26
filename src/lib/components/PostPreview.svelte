@@ -5,7 +5,7 @@
 
 	export let post: Post;
 
-	const targetUrl = '/blog/' + post.slug;
+	const targetUrl = '/notes/' + post.slug;
 </script>
 
 <li>

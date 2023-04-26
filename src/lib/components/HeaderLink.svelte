@@ -5,7 +5,7 @@
 	export let href: string;
 
 	$: isCurrentPage = href === $currentPage;
-	$: isBlogPost = href === '/blog' && $currentPage.startsWith(href + '/');
+	$: isBlogPost = href === '/notes' && $currentPage.startsWith(href + '/');
 </script>
 
 <li>

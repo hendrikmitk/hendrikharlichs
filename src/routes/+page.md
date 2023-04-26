@@ -20,7 +20,7 @@ I am a **Software Developer** living in Hamburg, Germany. I currently work at [C
 
 I have been a project manager, product owner, online editor, and even a car mechanic, but solving real-world problems and building useful, value-added web applications is what I enjoy the most!
 
-I graduated from the Full-Stack Web Development program at the [Hamburg Coding School](https://hamburgcodingschool.com/) and consider myself a life-long learner.
+I graduated from the Full-Stack Web Development program at the [Hamburg Coding School](https://hamburgcodingschool.com/) and consider myself a life-long learner. On my [blog](/notes) I share my experiences and deal with tech topics.
 
 ## Contact
 

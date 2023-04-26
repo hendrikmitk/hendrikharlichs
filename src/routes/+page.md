@@ -20,10 +20,8 @@ I am a **Software Developer** living in Hamburg, Germany. I currently work at [C
 
 I have been a project manager, product owner, online editor, and even a car mechanic, but solving real-world problems and building useful, value-added web applications is what I enjoy the most!
 
-Being in such different positions in corporate environments as well as on agency-side helped me to evolve a holistic view on both processes and the product itself that characterizes my way of working.
-
-Having started my developer career in the era of JavaScript UI frameworks and serverless deployment platforms, I am amazed by the low-threshold nature of modern web development. Understanding established concepts and computer science fundamentals as well as learning mature technologies are now the wind in my sails as I continue my journey as a developer.
+I graduated from the Full-Stack Web Development program at the [Hamburg Coding School](https://hamburgcodingschool.com/) and consider myself a life-long learner.
 
 ## Contact
 
-Do you have feedback or questions? Contact me by [email](mailto:hi@hendrikharlichs.de) or drop me a line on [Mastodon](https://mas.to/@hendrik).
+Do you have feedback or questions? Contact me by [email](mailto:hi@hendrikharlichs.de), drop me a line on [Mastodon](https://mas.to/@hendrik) or hit me up on [LinkedIn](https://www.linkedin.com/in/hendrikharlichs). I am always up for a chat and look forward to engaging with the community.

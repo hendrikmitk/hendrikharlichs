@@ -38,18 +38,30 @@
 		@include for(phone-only) {
 			padding: 1.25rem 0;
 
+			&::before,
 			&::after {
-				background-color: var(--color--mobile-header-background);
-				color: var(--color--mobile-header-text);
 				content: '';
-				clip-path: polygon(0 0, 100% 0, 100% 65%, 0 75%);
 				inset: 0;
-				position: absolute;
-				transform: translateY(-100%);
 				transition: all 0.4s ease-in-out;
 			}
 
+			&::before {
+				background-color: var(--color--mobile-header-background-top);
+				color: var(--color--mobile-header-text);
+				clip-path: polygon(0 0, 100% 0, 100% 65%, 0 75%);
+				position: absolute;
+				transform: translateY(-100%);
+			}
+
+			&::after {
+				background-color: var(--color--mobile-header-background-bottom);
+				clip-path: polygon(0 75%, 100% 65%, 100% 100%, 0% 100%);
+				position: fixed;
+				transform: translateY(100%);
+			}
+
 			&.expanded {
+				&::before,
 				&::after {
 					transform: translateY(0);
 				}

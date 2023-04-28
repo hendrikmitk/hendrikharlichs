@@ -5,7 +5,8 @@
 	@include define-color('header-accent', $ice-ice-baby);
 	@include define-color('header-text', $doctor-white);
 
-	@include define-color('mobile-header-background', $ice-ice-baby);
+	@include define-color('mobile-header-background-top', $ice-ice-baby);
+	@include define-color('mobile-header-background-bottom', $hadopelagic-water);
 	@include define-color('mobile-header-text', $hadopelagic-water);
 
 	@include define-color('page-background', $doctor-white);

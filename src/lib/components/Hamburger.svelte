@@ -1,14 +1,20 @@
 <script>
 	import { isMenuOpen } from '$store';
+	import { toggleScrollLock } from '$utils';
 
 	const toggleIsMenuOpen = () => {
 		isMenuOpen.set(!$isMenuOpen);
 	};
+
+	const handleLinkClick = () => {
+		toggleIsMenuOpen();
+		toggleScrollLock();
+	};
 </script>
 
 <div
-	on:click={toggleIsMenuOpen}
-	on:keydown={toggleIsMenuOpen}
+	on:click={handleLinkClick}
+	on:keydown={handleLinkClick}
 	class:is-active={$isMenuOpen}
 	class="hamburger hamburger--spin"
 >

@@ -1,7 +1,7 @@
 <script>
 	import { navItems } from '$config';
 	import { isMenuOpen } from '$store';
-	import { closeMenuIfOpen } from '$utils';
+	import { closeMenuIfOpen, removeScrollLock } from '$utils';
 	import Hamburger from '$lib/components/Hamburger.svelte';
 	import HeaderLink from './HeaderLink.svelte';
 	import HeaderLogo from './HeaderLogo.svelte';
@@ -9,7 +9,13 @@
 	const handleWindowResize = () => {
 		if ($isMenuOpen && window.innerWidth > 688) {
 			isMenuOpen.set(false);
+			removeScrollLock();
 		}
+	};
+
+	const handleLinkClick = () => {
+		closeMenuIfOpen();
+		removeScrollLock();
 	};
 </script>
 
@@ -17,7 +23,7 @@
 
 <header class:expanded={$isMenuOpen}>
 	<nav>
-		<a href="/" on:click={closeMenuIfOpen} title="Logo">
+		<a href="/" on:click={handleLinkClick} title="Logo">
 			<HeaderLogo />
 		</a>
 		<ul class:open={$isMenuOpen}>

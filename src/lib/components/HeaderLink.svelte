@@ -1,17 +1,22 @@
 <script lang="ts">
 	import { currentPage } from '$store';
-	import { closeMenuIfOpen } from '$utils';
+	import { closeMenuIfOpen, removeScrollLock } from '$utils';
 
 	export let href: string;
 
 	$: isCurrentPage = href === $currentPage;
 	$: isBlogPost = href === '/notes' && $currentPage.startsWith(href + '/');
+
+	const handleLinkClick = () => {
+		closeMenuIfOpen();
+		removeScrollLock();
+	};
 </script>
 
 <li>
 	<a
 		{href}
-		on:click={closeMenuIfOpen}
+		on:click={handleLinkClick}
 		class:active={isCurrentPage || isBlogPost}
 	>
 		<slot />

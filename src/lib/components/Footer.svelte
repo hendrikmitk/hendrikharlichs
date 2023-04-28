@@ -14,7 +14,7 @@
 		© {currentYear.toString()} Hendrik Harlichs. Made in Hamburg.
 	</div>
 	<div class="footer__social">
-		<FooterIcon href="https://mas.to/@hendrik" rel="noopener noreferrer">
+		<FooterIcon href="https://mas.to/@hendrik" rel="noopener noreferrer me">
 			<MastodonIcon />
 		</FooterIcon>
 		<FooterIcon href="https://github.com/hendrikmitk" rel="noopener noreferrer">

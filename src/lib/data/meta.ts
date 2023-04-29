@@ -1,4 +1,4 @@
 const description =
-	'Web developer, loves to work with HTML, CSS/Sass, JavaScript and Node.js, passionate about building websites, applications, and everything in between. Based in Hamburg.';
+	'Software developer who enjoys solving real-world problems and developing useful, value-added web applications. Based in Hamburg, Germany.';
 
 export { description };

@@ -14,10 +14,8 @@
 <meta name="twitter:description" content={description} />
 </svelte:head>
 
-# Error
+# Page Not Found
 
-Find and edit this page here:
+Sorry, the page you are looking for does not exist.
 
-```
-src/routes/+error.md
-```
+Go back to the [home page](/) instead.

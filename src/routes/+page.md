@@ -7,7 +7,7 @@
 
 <title>Home | { siteTitle }</title>
 <meta data-key="description" name="description" content={description} />
-<meta property="og:type" content="article" />
+<meta property="og:type" content="website" />
 <meta property="og:title" content="Home" />
 <meta property="og:description" content={description} />
 <meta name="twitter:title" content="Home" />

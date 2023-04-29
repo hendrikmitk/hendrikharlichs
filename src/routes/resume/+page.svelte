@@ -12,7 +12,7 @@
 <svelte:head>
 	<title>Resume | {siteTitle}</title>
 	<meta data-key="description" name="description" content={description} />
-	<meta property="og:type" content="article" />
+	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Resume" />
 	<meta property="og:description" content={description} />
 	<meta name="twitter:title" content="Resume" />

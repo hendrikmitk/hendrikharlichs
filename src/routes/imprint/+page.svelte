@@ -1,14 +1,32 @@
+<script>
+	import { siteTitle } from '$config';
+	import { description } from '$data';
+</script>
+
+<svelte:head>
+	<title>Imprint | {siteTitle}</title>
+	<meta data-key="description" name="description" content={description} />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Imprint" />
+	<meta property="og:description" content={description} />
+	<meta name="twitter:title" content="Imprint" />
+	<meta name="twitter:description" content={description} />
+</svelte:head>
+
 <h1>Impressum</h1>
 
 <p>Inhaltlich verantwortlich gemäß § 5 TMG:</p>
 
 <p>
-	Max Mustermann<br />Musterstraße 1<br />23456 Musterstadt
+	Hendrik Harlichs<br />Baakenallee 19<br />20457 Hamburg
 </p>
 
 <h2>Kontakt</h2>
 
-Telefon: +49 (0) 123 456 789 01 E-Mail: info@maxmustermann.de
+Telefon: +49 (0) 176 247 017 64<br />E-Mail:
+<a href="mailto:info@hendrikharlichs.de" rel="noopener noreferrer"
+	>info@hendrikharlichs.de</a
+>
 
 <h2>Haftungshinweis</h2>
 

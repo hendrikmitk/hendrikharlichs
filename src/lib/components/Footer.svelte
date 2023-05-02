@@ -14,39 +14,22 @@
 		© {currentYear.toString()} Hendrik Harlichs. Made in Hamburg.
 	</div>
 	<div class="footer__social">
-		<FooterIcon
-			href="https://mas.to/@hendrik"
-			rel="noopener noreferrer me"
-			title="Mastodon"
-		>
+		<FooterIcon href="https://mas.to/@hendrik" title="Mastodon">
 			<MastodonIcon />
 		</FooterIcon>
-		<FooterIcon
-			href="https://github.com/hendrikmitk"
-			rel="noopener noreferrer"
-			title="GitHub"
-		>
+		<FooterIcon href="https://github.com/hendrikmitk" title="GitHub">
 			<GithubIcon />
 		</FooterIcon>
 		<FooterIcon
 			href="https://stackoverflow.com/users/21548850/hendrikmitk"
-			rel="noopener noreferrer"
 			title="StackOverflow"
 		>
 			<StackOverflowIcon />
 		</FooterIcon>
-		<FooterIcon
-			href="https://linkedin.com/in/hendrikharlichs"
-			rel="noopener noreferrer"
-			title="LinkedIn"
-		>
+		<FooterIcon href="https://linkedin.com/in/hendrikharlichs" title="LinkedIn">
 			<LinkedinIcon />
 		</FooterIcon>
-		<FooterIcon
-			href="mailto:hi@hendrikharlichs.de"
-			rel="noopener noreferrer"
-			title="Mail"
-		>
+		<FooterIcon href="mailto:hi@hendrikharlichs.de" title="Mail">
 			<MailIcon />
 		</FooterIcon>
 	</div>

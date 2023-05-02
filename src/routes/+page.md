@@ -24,4 +24,4 @@ I have been a project manager, product owner, online editor, and even a car mech
 
 ## Contact
 
-<p>Do you have feedback or questions? Contact me by <a href="mailto:hi@hendrikharlichs.de" target="_blank" rel="noopener noreferrer">email</a>, drop me a line on <a href="https://mas.to/@hendrik" target="_blank" rel="noopener noreferrer">Mastodon</a> or hit me up on <a href="https://www.linkedin.com/in/hendrikharlichs" target="_blank" rel="noopener noreferrer">LinkedIn</a>. I am always up for a chat and look forward to engaging with the community.</p>
+<p>Do you have feedback or questions? Contact me by <a href="mailto:hi@hendrikharlichs.de" target="_blank" rel="noopener noreferrer">email</a>, drop me a line on <a href="https://mas.to/@hendrik" target="_blank" rel="me noopener noreferrer">Mastodon</a> or hit me up on <a href="https://www.linkedin.com/in/hendrikharlichs" target="_blank" rel="noopener noreferrer">LinkedIn</a>. I am always up for a chat and look forward to engaging with the community.</p>

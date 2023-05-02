@@ -16,12 +16,12 @@
 
 # Hi, I am Hendrik Harlichs.
 
-I am a **Software Developer** living in Hamburg, Germany. I currently work at [CHECK24](https://jobs.check24.de/) where I am mainly dealing with the ins and outs of Angular, TypeScript and PHP. I build stuff on the web using both established and cutting-edge technologies, however, I have a soft spot for the front-end.
+<p>I am a <b>Software Developer</b> living in Hamburg, Germany. I currently work at <a href="https://jobs.check24.de/" target="_blank" rel="noopener noreferrer">CHECK24</a> where I am mainly dealing with the ins and outs of Angular, TypeScript and PHP. I build stuff on the web using both established and cutting-edge technologies, however, I have a soft spot for the front-end.</p>
 
 I have been a project manager, product owner, online editor, and even a car mechanic, but solving real-world problems and building useful, value-added web applications is what I enjoy the most!
 
-I graduated from the Full-Stack Web Development program at the [Hamburg Coding School](https://hamburgcodingschool.com/) and consider myself a life-long learner. On my [blog](/notes) I share my experiences and deal with tech topics.
+<p>I graduated from the Full-Stack Web Development program at the <a href="https://hamburgcodingschool.com/" target="_blank" rel="noopener noreferrer">Hamburg Coding School</a> and consider myself a life-long learner. On my <a href="/notes">blog</a> I share my experiences and deal with tech topics.</p>
 
 ## Contact
 
-Do you have feedback or questions? Contact me by [email](mailto:hi@hendrikharlichs.de), drop me a line on [Mastodon](https://mas.to/@hendrik) or hit me up on [LinkedIn](https://www.linkedin.com/in/hendrikharlichs). I am always up for a chat and look forward to engaging with the community.
+<p>Do you have feedback or questions? Contact me by <a href="mailto:hi@hendrikharlichs.de" target="_blank" rel="noopener noreferrer">email</a>, drop me a line on <a href="https://mas.to/@hendrik" target="_blank" rel="noopener noreferrer">Mastodon</a> or hit me up on <a href="https://www.linkedin.com/in/hendrikharlichs" target="_blank" rel="noopener noreferrer">LinkedIn</a>. I am always up for a chat and look forward to engaging with the community.</p>

@@ -1,4 +1,4 @@
 const description =
-	'Software developer who enjoys solving real-world problems and developing useful, value-added web applications. Based in Hamburg, Germany.';
+	'Software developer who enjoys solving real-world problems and developing value-added web apps.';
 
 export { description };

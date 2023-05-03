@@ -7,9 +7,9 @@
 	<title>Imprint | {siteTitle}</title>
 	<meta data-key="description" name="description" content={description} />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Imprint" />
+	<meta property="og:title" content="Imprint | {siteTitle}" />
 	<meta property="og:description" content={description} />
-	<meta name="twitter:title" content="Imprint" />
+	<meta name="twitter:title" content="Imprint | {siteTitle}" />
 	<meta name="twitter:description" content={description} />
 </svelte:head>
 

@@ -11,9 +11,9 @@
 	<title>{title} | {siteTitle}</title>
 	<meta data-key="description" name="description" content={summary} />
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content={title} />
+	<meta property="og:title" content="{title} | {siteTitle}" />
 	<meta property="og:description" content={summary} />
-	<meta name="twitter:title" content={title} />
+	<meta name="twitter:title" content="{title} | {siteTitle}" />
 	<meta name="twitter:description" content={summary} />
 </svelte:head>
 

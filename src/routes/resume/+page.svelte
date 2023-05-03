@@ -13,9 +13,9 @@
 	<title>Resume | {siteTitle}</title>
 	<meta data-key="description" name="description" content={description} />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Resume" />
+	<meta property="og:title" content="Resume | {siteTitle}" />
 	<meta property="og:description" content={description} />
-	<meta name="twitter:title" content="Resume" />
+	<meta name="twitter:title" content="Resume | {siteTitle}" />
 	<meta name="twitter:description" content={description} />
 </svelte:head>
 

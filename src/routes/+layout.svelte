@@ -14,7 +14,7 @@
 	$: currentPage.set(data.path);
 
 	onMount(() => {
-		preloadCode(...navItems.map((item) => item.route), '/imprint');
+		preloadCode(...navItems.map((item) => item.route));
 	});
 </script>
 

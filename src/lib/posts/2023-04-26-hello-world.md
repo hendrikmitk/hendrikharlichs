@@ -1,7 +1,7 @@
 ---
 title: Hello World
 created: 2023-04-26
-updated: 2023-05-01
+updated: 2023-05-13
 summary: My first blog ever. A place to share my experiences and thoughts.
 draft: false
 ---
@@ -13,5 +13,3 @@ Since day one of my development career, I have been thinking about how cool it w
 Today, I believe that every person in tech – regardless of their career level and knowledge – is gaining experiences along the way that are worth sharing.
 
 I am looking forward to share my experiences on this blog and ramble on technologies that I enjoy.
-
-The first regular blog post will probably be about the making of this project, the considerations involved, and what I learned during the implementation.

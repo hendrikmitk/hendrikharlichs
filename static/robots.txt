@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hendrikharlichs.de/sitemap.xml

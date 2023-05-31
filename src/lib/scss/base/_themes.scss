@@ -22,6 +22,11 @@
 
 	@include define-color('page-code-inline-background', $pixel-white);
 	@include define-color('page-code-inline-text', $diamond-black);
+
+	@include define-color('tag-primary-background', $heavy-metal-armor);
+	@include define-color('tag-primary-text', $unicorn-silver);
+	@include define-color('tag-secondary-background', $pixel-white);
+	@include define-color('tag-secondary-text', $heavy-metal-armor);
 }
 
 :root {

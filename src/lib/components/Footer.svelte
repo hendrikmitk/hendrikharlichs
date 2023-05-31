@@ -1,5 +1,5 @@
 <script lang="ts">
-	import FooterIcon from './FooterIcon.svelte';
+	import FooterIcon from '$lib/components/FooterIcon.svelte';
 	import GithubIcon from '$lib/icons/Github.svelte';
 	import LinkedinIcon from '$lib/icons/Linkedin.svelte';
 	import MailIcon from '$lib/icons/Mail.svelte';

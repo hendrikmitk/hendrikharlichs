@@ -16,7 +16,45 @@ export const jobs: Employer[] = [
 					'Cooperation with product management and MD to drive customer value',
 					'Maintenance of CI/CD pipelines to increase automation level and pace'
 				],
-				jobTitle: 'Junior Software Developer'
+				jobTitle: 'Junior Software Developer',
+				skills: [
+					{
+						label: 'Angular',
+						highlight: true
+					},
+					{
+						label: 'TypeScript',
+						highlight: true
+					},
+					{
+						label: 'RxJS',
+						highlight: false
+					},
+					{
+						label: 'NgRx',
+						highlight: false
+					},
+					{
+						label: 'PHP',
+						highlight: true
+					},
+					{
+						label: 'MySQL',
+						highlight: false
+					},
+					{
+						label: 'Linux',
+						highlight: false
+					},
+					{
+						label: 'Docker',
+						highlight: false
+					},
+					{
+						label: 'Bamboo',
+						highlight: false
+					}
+				]
 			}
 		],
 		url: 'https://jobs.check24.de/'
@@ -30,7 +68,37 @@ export const jobs: Employer[] = [
 				dateEnd: '2022-04',
 				description:
 					'Implementation of different projects for customers in the automotive and orthopedic industry.',
-				jobTitle: 'Junior Frontend Developer'
+				jobTitle: 'Junior Frontend Developer',
+				skills: [
+					{
+						label: 'Vue.js',
+						highlight: false
+					},
+					{
+						label: 'Tailwind CSS',
+						highlight: false
+					},
+					{
+						label: 'TYPO3',
+						highlight: false
+					},
+					{
+						label: 'HTML',
+						highlight: false
+					},
+					{
+						label: 'CSS',
+						highlight: false
+					},
+					{
+						label: 'Sass',
+						highlight: false
+					},
+					{
+						label: 'JavaScript',
+						highlight: false
+					}
+				]
 			}
 		],
 		url: 'https://appmotion.de/'

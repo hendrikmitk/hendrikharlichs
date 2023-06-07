@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Employer } from '$types';
 	import { formatDate } from '$utils';
+	import SkillList from '$lib/components/SkillList.svelte';
 	import CalendarIcon from '$lib/icons/Calendar.svelte';
 
 	export let job: Employer;
@@ -26,6 +27,9 @@
 							<li>{duty}</li>
 						{/each}
 					</ul>
+				{/if}
+				{#if position.skills}
+					<SkillList skills={position.skills} />
 				{/if}
 				<small class="position__meta">
 					<CalendarIcon />

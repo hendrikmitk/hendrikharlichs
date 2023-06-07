@@ -3,8 +3,8 @@
 	import { isMenuOpen } from '$store';
 	import { closeMenuIfOpen, removeScrollLock } from '$utils';
 	import Hamburger from '$lib/components/Hamburger.svelte';
-	import HeaderLink from './HeaderLink.svelte';
-	import HeaderLogo from './HeaderLogo.svelte';
+	import HeaderLink from '$lib/components/HeaderLink.svelte';
+	import HeaderLogo from '$lib/components/HeaderLogo.svelte';
 
 	const handleWindowResize = () => {
 		if ($isMenuOpen && window.innerWidth > 688) {

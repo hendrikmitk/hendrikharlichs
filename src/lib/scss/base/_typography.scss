@@ -80,7 +80,7 @@ small {
 			color: var(--color--page-accent);
 			content: '#';
 			opacity: 0;
-			transition: all 0.4s ease-in-out;
+			transition: all 180ms ease-in-out;
 		}
 
 		&:hover .icon-link::before {

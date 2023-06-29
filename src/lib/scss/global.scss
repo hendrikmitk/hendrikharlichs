@@ -17,7 +17,12 @@ body {
 	min-height: -webkit-fill-available; // Safari viewport bug fix
 	overflow-x: hidden;
 	scroll-behavior: smooth;
+	scrollbar-width: 0;
 	width: 100%;
+
+	&::-webkit-scrollbar {
+		width: 0;
+	}
 
 	&.scroll-lock {
 		overflow-y: hidden;

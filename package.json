@@ -1,7 +1,16 @@
 {
 	"name": "hendrikharlichs",
-	"version": "0.0.1",
-	"private": true,
+	"author": {
+		"name": "Hendrik Harlichs",
+		"email": "hi@hendrikharlichs.de",
+		"url": "https://hendrikharlichs.de"
+	},
+	"repository": "github:hendrikmitk/hendrikharlichs",
+	"bugs": {
+		"url": "https://github.com/hendrikmitk/hendrikharlichs/issues",
+		"email": "bugs@hendrikharlichs.de"
+	},
+	"homepage": "https://github.com/hendrikmitk/hendrikharlichs#readme",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",

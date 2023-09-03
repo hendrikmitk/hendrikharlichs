@@ -4,7 +4,7 @@
 
 	export let skills: Skill[];
 
-	const compareLabel = (a: any, b: any) => {
+	const compareLabel = (a: Skill, b: Skill) => {
 		if (a.label.toLowerCase() < b.label.toLowerCase()) return -1;
 		if (a.label.toLowerCase() > b.label.toLowerCase()) return 1;
 		return 0;

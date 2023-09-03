@@ -1,6 +1,6 @@
 <script>
-	import { isMenuOpen } from '$store';
-	import { toggleScrollLock } from '$utils';
+	import { isMenuOpen } from '$lib/store';
+	import { toggleScrollLock } from '$lib/utils';
 
 	const toggleIsMenuOpen = () => {
 		isMenuOpen.set(!$isMenuOpen);

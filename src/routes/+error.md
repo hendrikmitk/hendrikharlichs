@@ -1,6 +1,6 @@
 <script>
-	import { siteTitle } from '$config';
-	import { description } from '$data';
+	import { siteTitle } from '$lib/config';
+	import { description } from '$lib/data';
 </script>
 
 <svelte:head>

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { siteTitle } from '$config';
-	import { formatDate } from '$utils';
+	import { siteTitle } from '$lib/config';
+	import { formatDate } from '$lib/utils';
 
 	export let data;
 

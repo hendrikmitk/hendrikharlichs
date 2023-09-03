@@ -7,14 +7,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapter(),
-		alias: {
-			$config: 'src/lib/config.ts',
-			$data: 'src/lib/data',
-			$store: 'src/lib/store.ts',
-			$types: 'src/lib/types',
-			$utils: 'src/lib/utils'
-		}
+		adapter: adapter()
 	},
 
 	extensions: ['.svelte', '.md'],

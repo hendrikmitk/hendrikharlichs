@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { currentPage } from '$store';
-	import { closeMenuIfOpen, removeScrollLock } from '$utils';
+	import { currentPage } from '$lib/store';
+	import { closeMenuIfOpen, removeScrollLock } from '$lib/utils';
 
 	export let href: string;
 

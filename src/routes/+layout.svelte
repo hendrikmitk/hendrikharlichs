@@ -1,6 +1,6 @@
 <script>
-	import { currentPage } from '$store';
-	import { navItems } from '$config';
+	import { currentPage } from '$lib/store';
+	import { navItems } from '$lib/config';
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
 

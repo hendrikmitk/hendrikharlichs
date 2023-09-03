@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { Post } from '$types';
-	import { formatDate } from '$utils';
+	import type { Post } from '$lib/types';
+	import { formatDate } from '$lib/utils';
 	import PostIcon from '$lib/icons/Post.svelte';
 
 	export let post: Post;

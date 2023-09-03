@@ -1,7 +1,7 @@
 <script>
-	import { navItems } from '$config';
-	import { isMenuOpen } from '$store';
-	import { closeMenuIfOpen, removeScrollLock } from '$utils';
+	import { navItems } from '$lib/config';
+	import { isMenuOpen } from '$lib/store';
+	import { closeMenuIfOpen, removeScrollLock } from '$lib/utils';
 	import Hamburger from '$lib/components/Hamburger.svelte';
 	import HeaderLink from '$lib/components/HeaderLink.svelte';
 	import HeaderLogo from '$lib/components/HeaderLogo.svelte';

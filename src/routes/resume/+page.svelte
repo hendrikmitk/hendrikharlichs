@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { siteTitle } from '$config';
-	import { description } from '$data';
-	import type { Employer } from '$types';
+	import { siteTitle } from '$lib/config';
+	import { description } from '$lib/data';
+	import type { Employer } from '$lib/types';
 	import JobItem from '$lib/components/JobItem.svelte';
 
 	export let data;

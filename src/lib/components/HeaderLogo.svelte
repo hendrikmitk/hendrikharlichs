@@ -1,5 +1,5 @@
 <script>
-	import { isMenuOpen } from '$store';
+	import { isMenuOpen } from '$lib/store';
 </script>
 
 <svg

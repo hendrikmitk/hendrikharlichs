@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { siteTitle } from '$config';
-  import { description } from '$data';
-  import type { Post } from '$types';
+	import { siteTitle } from '$lib/config';
+  import { description } from '$lib/data';
+  import type { Post } from '$lib/types';
   import PostList from '$lib/components/PostList.svelte';
 
 	export let data;

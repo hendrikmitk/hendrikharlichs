@@ -1,4 +1,4 @@
-import type { Post } from '$types';
+import type { Post } from '$lib/types';
 
 export const load = () => {
 	const markdownFiles = import.meta.glob('/src/lib/posts/*md', {

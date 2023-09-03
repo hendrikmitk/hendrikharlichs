@@ -1,4 +1,4 @@
-import type { Employer } from '$types';
+import type { Employer } from '$lib/types';
 
 export const jobs: Employer[] = [
 	{

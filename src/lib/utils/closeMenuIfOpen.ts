@@ -1,4 +1,4 @@
-import { isMenuOpen } from '$store';
+import { isMenuOpen } from '$lib/store';
 
 const closeMenuIfOpen = () => isMenuOpen && isMenuOpen.set(false);
 

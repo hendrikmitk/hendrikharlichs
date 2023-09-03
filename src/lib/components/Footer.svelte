@@ -5,6 +5,7 @@
 	import MailIcon from '$lib/icons/Mail.svelte';
 	import MastodonIcon from '$lib/icons/Mastodon.svelte';
 	import StackOverflowIcon from '$lib/icons/StackOverflow.svelte';
+	import StravaIcon from '$lib/icons/Strava.svelte';
 
 	const currentYear: number = new Date().getFullYear();
 </script>
@@ -28,6 +29,12 @@
 		</FooterIcon>
 		<FooterIcon href="https://linkedin.com/in/hendrikharlichs" title="LinkedIn">
 			<LinkedinIcon />
+		</FooterIcon>
+		<FooterIcon
+			href="https://www.strava.com/athletes/hendrikmitk"
+			title="Strava"
+		>
+			<StravaIcon />
 		</FooterIcon>
 		<FooterIcon href="mailto:hi@hendrikharlichs.de" title="Mail">
 			<MailIcon />

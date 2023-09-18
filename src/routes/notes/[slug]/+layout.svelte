@@ -29,13 +29,12 @@
 <style lang="scss">
 	@include for(tablet-and-up) {
 		div {
-			height: 0.375rem;
 			background-color: var(--color--page-accent);
+			height: 0.375rem;
 			inset: 0 auto auto 0;
 			position: fixed;
 
 			> div {
-				background-color: transparent;
 				background-color: var(--color--header-background);
 				content: '';
 				inset: 0 0 auto auto;

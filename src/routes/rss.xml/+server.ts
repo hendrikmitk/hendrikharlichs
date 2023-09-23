@@ -2,6 +2,8 @@ import { siteTitle, siteBaseUrl } from '$lib/config';
 import type { Post } from '$lib/types';
 import { getPosts } from '$lib/utils';
 
+export const prerender = true;
+
 export const GET = async () => {
 	const posts = getPosts();
 

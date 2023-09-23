@@ -1,4 +1,5 @@
 export const siteTitle = 'Hendrik Harlichs';
+export const siteBaseUrl = 'https://hendrikharlichs.de';
 
 export const navItems = [
 	{

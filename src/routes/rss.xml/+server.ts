@@ -1,4 +1,5 @@
 import { siteTitle, siteBaseUrl } from '$lib/config';
+import { description } from '$lib/data';
 import type { Post } from '$lib/types';
 import { getPosts } from '$lib/utils';
 
@@ -25,7 +26,7 @@ const render = (
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 <title>${siteTitle}</title>
-<description>${siteTitle}</description>
+<description>${description}</description>
 <link>${siteBaseUrl}</link>
 <atom:link href="${siteBaseUrl}/rss.xml" rel="self" type="application/rss+xml"/>
 ${posts

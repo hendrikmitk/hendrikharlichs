@@ -3,7 +3,7 @@
 	export let title: string;
 </script>
 
-<a {href} target="_blank" rel="noopener noreferrer" {title}>
+<a {href} target="_blank" rel="external noopener noreferrer" {title}>
 	<slot />
 </a>
 

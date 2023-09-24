@@ -9,7 +9,7 @@
 
 <li class="job">
 	<h2 class="job__company">
-		<a href={job.url} target="_blank" rel="noopener noreferrer">
+		<a href={job.url} target="_blank" rel="external noopener noreferrer">
 			{job.company}
 		</a>
 	</h2>

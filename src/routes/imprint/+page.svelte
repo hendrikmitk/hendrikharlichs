@@ -24,7 +24,7 @@
 <h2>Kontakt</h2>
 
 Telefon: +49 (0) 176 247 017 64<br />E-Mail:
-<a href="mailto:info@hendrikharlichs.de" rel="noopener noreferrer"
+<a href="mailto:info@hendrikharlichs.de" rel="external noopener noreferrer"
 	>info@hendrikharlichs.de</a
 >
 

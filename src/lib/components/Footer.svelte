@@ -44,10 +44,12 @@
 		Powered by <a
 			href="https://kit.svelte.dev/"
 			target="_blank"
-			rel="noopener noreferrer">SvelteKit</a
+			rel="external noopener noreferrer">SvelteKit</a
 		>. Hosted on
-		<a href="https://vercel.com/" target="_blank" rel="noopener noreferrer"
-			>Vercel</a
+		<a
+			href="https://vercel.com/"
+			target="_blank"
+			rel="external noopener noreferrer">Vercel</a
 		>.
 	</div>
 	<div class="footer__links">
@@ -55,7 +57,7 @@
 		<a
 			href="https://github.com/hendrikmitk/hendrikharlichs"
 			target="_blank"
-			rel="noopener noreferrer">Source Code</a
+			rel="external noopener noreferrer">Source Code</a
 		>
 	</div>
 </footer>

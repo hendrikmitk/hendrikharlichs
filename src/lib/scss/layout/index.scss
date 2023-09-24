@@ -6,11 +6,19 @@
 	}
 }
 
-:is(h2, h3) {
-	margin: 1rem 0 0.5rem;
+:is(h2) {
+	margin: 1.5rem 0 0.5rem;
 
 	@include for(tablet-and-up) {
-		margin: 1.5rem 0 0.75rem;
+		margin: 2.5rem 0 0.75rem;
+	}
+}
+
+:is(h3) {
+	margin: 0.75rem 0 0.5rem;
+
+	@include for(tablet-and-up) {
+		margin: 1.25rem 0 0.75rem;
 	}
 }
 

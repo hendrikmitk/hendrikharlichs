@@ -51,10 +51,10 @@ h2 {
 }
 
 h3 {
-	font-size: 1.25rem;
+	font-size: 1.125rem;
 
 	@include for(tablet-and-up) {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 	}
 }
 

@@ -76,7 +76,7 @@ Utilizing this only takes a `postbuild` hook in the `package.json`.
 }
 ```
 
-Note that if the project is to be built using Sveltekit's [adapter-static](https://kit.svelte.dev/docs/adapter-static) and then deployed to Vercel, `.vercel/output/static` must be specified as output directory (since Vercel does not create a `build/` folder). To deal with this, I created dedicated `:vercel` scripts that are called when a production build is run on Vercel.
+Note that if the project is to be built using SvelteKit's [adapter-static](https://kit.svelte.dev/docs/adapter-static) and then deployed to Vercel, `.vercel/output/static` must be specified as output directory (since Vercel does not create a `build/` folder). To deal with this, I created dedicated `:vercel` scripts that are called when a production build is run on Vercel.
 
 ```json
 {
@@ -90,9 +90,9 @@ Note that if the project is to be built using Sveltekit's [adapter-static](https
 
 ### RSS feed implementation
 
-Svelte's server routes do not need to return JSON but can also render an XML file generated at build time. This makes providing an RSS feed a breeze!
+SvelteKit's server routes do not need to return JSON but can also render an XML file generated at build time. This makes providing an RSS feed a breeze!
 
-To make the RSS feed available at the https://yourdomain.com/rss.xml, create an `rss.xml` folder with a `+server.js` file in the `src/routes` folder and throw in a `GET` handler. Grab the Markdown files of your blog posts, generate the XML file content from the posts metadata using a render function and return an `Response` object.
+To make the RSS feed available at https://yourdomain.com/rss.xml, create an `rss.xml` folder with a `+server.js` file in the `src/routes` folder and throw in a `GET` handler. Grab the Markdown files of your blog posts, generate the XML file content from the posts metadata using a render function and return an `Response` object.
 
 ```ts
 // src/routes/rss.xml/+server.js

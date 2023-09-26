@@ -4,6 +4,7 @@
 	import LinkedinIcon from '$lib/icons/Linkedin.svelte';
 	import MailIcon from '$lib/icons/Mail.svelte';
 	import MastodonIcon from '$lib/icons/Mastodon.svelte';
+	import RssIcon from '$lib/icons/Rss.svelte';
 	import StackOverflowIcon from '$lib/icons/StackOverflow.svelte';
 	import StravaIcon from '$lib/icons/Strava.svelte';
 
@@ -38,6 +39,9 @@
 		</FooterIcon>
 		<FooterIcon href="mailto:hi@hendrikharlichs.de" title="Mail">
 			<MailIcon />
+		</FooterIcon>
+		<FooterIcon href="/rss.xml" title="RSS">
+			<RssIcon />
 		</FooterIcon>
 	</div>
 	<div class="footer__credits">

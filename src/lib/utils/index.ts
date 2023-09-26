@@ -4,6 +4,7 @@ import getPosts from './getPosts';
 import printConsoleMessage from './printConsoleMessage';
 import removeScrollLock from './removeScrollLock';
 import toggleScrollLock from './toggleScrollLock';
+import trimFrontMatter from './trimFrontMatter';
 
 export {
 	closeMenuIfOpen,
@@ -11,5 +12,6 @@ export {
 	getPosts,
 	printConsoleMessage,
 	removeScrollLock,
-	toggleScrollLock
+	toggleScrollLock,
+	trimFrontMatter
 };

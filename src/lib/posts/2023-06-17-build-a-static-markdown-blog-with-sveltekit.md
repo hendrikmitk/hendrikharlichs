@@ -229,6 +229,6 @@ ${posts
 
 Even though we only touched some parts in this article, I gotta say that the whole thing worked out very well. From my point of view, SvelteKit provides a top-notch developer experience as a static site generator while making it dead easy to add some nifty SPA-like features (e.g. client-side routing).
 
-I ended up with a snappy zero-runtime-dependency website with a Google Lighthouse score of 100% and a bundle size of currently less than 450 kB, which I am perfectly very happy with.
+I ended up with a snappy zero-runtime-dependency website with a Google Lighthouse score of 100% and a total page size of currently 203 KB uncompressed, which I am perfectly very happy with.
 
 Hopefully you also got something valuable out of this article, even if it's just a glimpse into the wide range of SvelteKit's capabilities. Who knows, you might implement your next project in SvelteKit!

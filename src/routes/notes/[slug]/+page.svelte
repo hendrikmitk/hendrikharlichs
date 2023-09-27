@@ -75,6 +75,10 @@
 
 		small {
 			display: block;
+
+			&:last-of-type {
+				padding-top: 0.25rem;
+			}
 		}
 	}
 </style>

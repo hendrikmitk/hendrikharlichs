@@ -1,7 +1,7 @@
 import type { ReadingTime } from '$lib/types/post.js';
 import trimFrontMatter from '$lib/utils/trimFrontMatter.js';
 
-import markdownToTxt from 'markdown-to-txt';
+import { markdownToTxt } from 'markdown-to-txt';
 import { readingTime } from 'reading-time-estimator';
 
 export async function load({ params }) {

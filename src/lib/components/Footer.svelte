@@ -33,7 +33,7 @@
 		</FooterIcon>
 		<FooterIcon
 			href="https://www.strava.com/athletes/hendrikmitk"
-			title=" Strava"
+			title="Strava"
 		>
 			<StravaIcon />
 		</FooterIcon>

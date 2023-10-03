@@ -1,4 +1,6 @@
 <script lang="ts">
+	import BackToTop from '$lib/components/BackToTop.svelte';
+
 	const scrollThreshold = 82;
 	let isHeaderInView: boolean;
 	let scrollProgress: number;
@@ -25,6 +27,8 @@
 </div>
 
 <slot />
+
+<BackToTop />
 
 <style lang="scss">
 	@include for(tablet-and-up) {

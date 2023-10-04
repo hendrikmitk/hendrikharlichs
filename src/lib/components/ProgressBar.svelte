@@ -16,7 +16,11 @@
 	};
 </script>
 
-<svelte:window on:scroll={parseScroll} on:scroll={updatescrollProgress} />
+<svelte:window
+	on:load={updatescrollProgress}
+	on:scroll={parseScroll}
+	on:scroll={updatescrollProgress}
+/>
 
 <div style:width={scrollProgress + '%'}>
 	{#if !isHeaderInView}

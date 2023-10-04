@@ -1,30 +1,30 @@
 <script lang="ts">
 	const scrollThreshold = 82;
 	let isHeaderInView: boolean;
-	let scrollProgress: number;
+	let progress: number;
 
 	const parseScroll = (): void => {
 		isHeaderInView = window.scrollY < scrollThreshold;
 	};
 
-	const updatescrollProgress = (): void => {
+	const updateProgress = (): void => {
 		let scroll = document.documentElement.scrollTop;
 		let height =
 			document.documentElement.scrollHeight -
 			document.documentElement.clientHeight;
-		scrollProgress = +((scroll / height) * 100).toFixed(2);
+		progress = +((scroll / height) * 100).toFixed(2);
 	};
 </script>
 
 <svelte:window
-	on:load={updatescrollProgress}
+	on:load={updateProgress}
 	on:scroll={parseScroll}
-	on:scroll={updatescrollProgress}
+	on:scroll={updateProgress}
 />
 
-<div style:width={scrollProgress + '%'}>
+<div style:width={progress + '%'}>
 	{#if !isHeaderInView}
-		<div style:width={100 - scrollProgress + '%'} />
+		<div style:width={100 - progress + '%'} />
 	{/if}
 </div>
 

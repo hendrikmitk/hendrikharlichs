@@ -55,7 +55,7 @@
 				background-color: var(--color--mobile-header-background-top);
 				color: var(--color--mobile-header-text);
 				clip-path: polygon(0 0, 100% 0, 100% 65%, 0 75%);
-				position: absolute;
+				position: fixed;
 				transform: translateY(-100%);
 			}
 

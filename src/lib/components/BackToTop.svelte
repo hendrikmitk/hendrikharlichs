@@ -33,7 +33,7 @@
 
 		all: unset;
 		color: var(--color--page-accent);
-		inset: auto 0.75rem 0.75rem auto;
+		inset: auto 1.5rem 1.5rem auto;
 		opacity: 1;
 		position: fixed;
 		transition: all 0.4s ease-in-out;

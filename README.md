@@ -30,6 +30,13 @@ npm run build
 npm run preview
 ```
 
+### Create blog post template
+
+```bash
+./create-post.sh 'Hello World'
+# src/lib/posts/2023-10-27-hello-world.md
+```
+
 ## Recommended IDE Setup
 
 - [VS Code](https://code.visualstudio.com/) + [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)

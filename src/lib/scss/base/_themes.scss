@@ -27,6 +27,9 @@
 	@include define-color('tag-primary-text', $unicorn-silver);
 	@include define-color('tag-secondary-background', $pixel-white);
 	@include define-color('tag-secondary-text', $heavy-metal-armor);
+
+	@include define-color('error', $capocollo);
+	@include define-color('warning', $gold-abundance);
 }
 
 :root {

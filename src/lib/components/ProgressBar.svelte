@@ -35,6 +35,7 @@
 			height: 0.375rem;
 			inset: 0 auto auto 0;
 			position: fixed;
+			z-index: 2;
 
 			> div {
 				background-color: var(--color--header-background);

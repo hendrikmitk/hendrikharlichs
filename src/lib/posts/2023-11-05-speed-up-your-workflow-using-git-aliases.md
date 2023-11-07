@@ -99,7 +99,7 @@ A different approach to using advanced Git aliases is to use Bash or Zsh aliases
 alias alias_name="command_to_run"
 ```
 
-While we have _extended_ the `git` program with additional commands in the [Git configuration file](#git-configuration-file) approach, this is not possible using Bash or Zsh aliases. Here we have to come up with new and unique command names for our Git aliases. One simple and common solution is to prefix the commands appropriately, in our case with `git*` or just `g*`. This is what the example from the beginning would look like in a bashrc:
+While we have _extended_ the `git` program with additional commands in the [Git configuration file](#git-configuration-file) approach, this is not possible using Bash or Zsh aliases. Here we have to come up with new and unique command names for our Git aliases. One simple and common solution is to prefix the commands appropriately, in our case with `git*` or just `g*`. This is what the example from the beginning would look like in a `.bashrc`:
 
 ```
 alias gbr='git branch'

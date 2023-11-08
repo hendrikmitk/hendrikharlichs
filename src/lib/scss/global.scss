@@ -13,6 +13,7 @@
 body {
 	background-color: var(--color--page-background);
 	color: var(--color--page-text);
+	font-variant-ligatures: none;
 	min-height: 100vh;
 	min-height: -webkit-fill-available; // Safari viewport bug fix
 	overflow-x: hidden;

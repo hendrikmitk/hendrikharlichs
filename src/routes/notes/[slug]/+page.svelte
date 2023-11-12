@@ -1,11 +1,10 @@
 <script lang="ts">
 	import { siteTitle } from '$lib/config';
-	import { capitalizeFirstLetter, formatDate } from '$lib/utils';
+	import { formatDate } from '$lib/utils';
 
 	export let data;
 
-	const { content, created, estimatedReadingTime, summary, title, updated } =
-		data;
+	const { content, created, summary, title, updated } = data;
 </script>
 
 <svelte:head>
@@ -32,11 +31,6 @@
 				<time datetime={updated.substring(0, 10)}>{formatDate(updated)}</time>
 			</small>
 		{/if}
-		<small>
-			<time datetime={`PT${estimatedReadingTime.minutes}M`}>
-				{capitalizeFirstLetter(estimatedReadingTime.text)}
-			</time>
-		</small>
 	</div>
 
 	<svelte:component this={content} />
@@ -75,10 +69,6 @@
 
 		small {
 			display: block;
-
-			&:last-of-type {
-				padding-top: 0.25rem;
-			}
 		}
 	}
 </style>

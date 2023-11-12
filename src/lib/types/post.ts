@@ -1,4 +1,4 @@
-export interface ReadingTime {
+interface ReadingTime {
 	minutes: number;
 	text: string;
 	words: number;

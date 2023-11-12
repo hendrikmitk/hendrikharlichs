@@ -7,6 +7,7 @@ export interface ReadingTime {
 export default interface Post {
 	created: string;
 	draft: boolean;
+	readingTime: ReadingTime;
 	slug: string;
 	summary: string;
 	title: string;

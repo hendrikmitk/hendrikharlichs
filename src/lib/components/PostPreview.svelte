@@ -4,6 +4,8 @@
 	import PostIcon from '$lib/icons/Post.svelte';
 
 	export let post: Post;
+
+	const targetUrl: string = '/notes/' + post.slug;
 </script>
 
 <li>
@@ -15,7 +17,9 @@
 		</small>
 
 		<h2>
-			{post.title}
+			<a href={targetUrl} data-sveltekit-preload-code>
+				{post.title}
+			</a>
 		</h2>
 
 		<p>
@@ -23,7 +27,7 @@
 		</p>
 
 		<div>
-			<a href={'/notes/' + post.slug} data-sveltekit-preload-code>
+			<a href={targetUrl} data-sveltekit-preload-code>
 				<PostIcon />
 				Read more
 			</a>

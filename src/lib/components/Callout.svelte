@@ -35,7 +35,7 @@
 		border-top-right-radius: 4px;
 		margin: 0.5rem 0;
 		overflow: clip;
-		padding: 0.5rem 2.75rem 0.5rem 0.75rem;
+		padding: 0.125rem 2rem 0.125rem 0.75rem;
 		position: relative;
 
 		@include for(tablet-and-up) {

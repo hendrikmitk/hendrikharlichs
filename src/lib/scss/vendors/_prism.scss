@@ -11,7 +11,7 @@ pre[class*='language-'] {
 	color: #ffffff;
 	font-family: var(--font--code);
 	/* The following properties are standard, please leave them as they are */
-	font-size: 1em;
+	font-size: 0.875rem;
 	direction: ltr;
 	padding: initial;
 	text-align: left;
@@ -47,7 +47,7 @@ pre[class*='language-'] ::selection {
 
 /* Properties specific to code blocks */
 pre[class*='language-'] {
-	padding: 1em; /* this is standard */
+	padding: 0.75em; /* this is standard */
 	overflow: auto; /* this is standard */
 	border-radius: 0.25em;
 }

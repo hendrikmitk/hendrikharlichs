@@ -4,8 +4,6 @@
 	import PostIcon from '$lib/icons/Post.svelte';
 
 	export let post: Post;
-
-	const targetUrl = '/notes/' + post.slug;
 </script>
 
 <li>
@@ -17,19 +15,22 @@
 		</small>
 
 		<h2>
-			<a href={targetUrl} data-sveltekit-preload-code>
-				{post.title}
-			</a>
+			{post.title}
 		</h2>
 
 		<p>
 			{post.summary}
 		</p>
 
-		<a href={targetUrl} data-sveltekit-preload-code>
-			<PostIcon />
-			Read more
-		</a>
+		<div>
+			<a href={'/notes/' + post.slug} data-sveltekit-preload-code>
+				<PostIcon />
+				Read more
+			</a>
+			<time datetime={`PT${post.readingTime.minutes}M`}>
+				({post.readingTime.text})
+			</time>
+		</div>
 	</article>
 </li>
 
@@ -53,15 +54,24 @@
 			margin-top: 0;
 		}
 
-		a:not(h2 > a) {
-			align-items: center;
-			display: inline-flex;
+		div {
+			display: flex;
 			font-size: 0.875rem;
 			gap: 0.25rem;
 
-			:global(svg) {
-				height: 1rem;
-				width: auto;
+			a {
+				align-items: center;
+				display: inline-flex;
+				gap: 0.25rem;
+
+				:global(svg) {
+					height: 1rem;
+					width: auto;
+				}
+			}
+
+			time {
+				color: var(--color--page-text-small);
 			}
 		}
 	}

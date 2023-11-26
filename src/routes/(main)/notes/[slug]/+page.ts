@@ -4,5 +4,5 @@ export async function load({ params }) {
 
 	const { created, summary, title, updated } = post.metadata;
 
-	return { content, created, summary, title, updated };
+	return { content, created, slug: params.slug, summary, title, updated };
 }

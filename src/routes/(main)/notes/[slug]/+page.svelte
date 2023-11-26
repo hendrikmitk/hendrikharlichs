@@ -4,7 +4,7 @@
 
 	export let data;
 
-	const { content, created, summary, title, updated } = data;
+	const { content, created, slug, summary, title, updated } = data;
 </script>
 
 <svelte:head>
@@ -13,8 +13,16 @@
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content="{title} | {siteTitle}" />
 	<meta property="og:description" content={summary} />
+	<meta
+		property="og:image"
+		content={`https://hendrikharlichs.de/${slug}.png`}
+	/>
 	<meta name="twitter:title" content="{title} | {siteTitle}" />
 	<meta name="twitter:description" content={summary} />
+	<meta
+		name="twitter:image"
+		content={`https://hendrikharlichs.de/${slug}.png`}
+	/>
 </svelte:head>
 
 <article>

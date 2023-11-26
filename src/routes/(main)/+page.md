@@ -10,8 +10,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Home | { siteTitle }" />
 <meta property="og:description" content={description} />
+<meta property="og:image" content="https://hendrikharlichs.de/share.png" />
 <meta name="twitter:title" content="Home | { siteTitle }" />
 <meta name="twitter:description" content={description} />
+<meta name="twitter:image" content="https://hendrikharlichs.de/share.png" />
 </svelte:head>
 
 # Hi, I am Hendrik Harlichs.

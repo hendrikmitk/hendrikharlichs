@@ -15,8 +15,10 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Resume | {siteTitle}" />
 	<meta property="og:description" content={description} />
+	<meta property="og:image" content="https://hendrikharlichs.de/share.png" />
 	<meta name="twitter:title" content="Resume | {siteTitle}" />
 	<meta name="twitter:description" content={description} />
+	<meta name="twitter:image" content="https://hendrikharlichs.de/share.png" />
 </svelte:head>
 
 <article>

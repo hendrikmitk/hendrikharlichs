@@ -83,7 +83,7 @@
 					}
 
 					&--xl {
-						font-size: 8rem;
+						font-size: 6.5rem;
 					}
 				}
 			}

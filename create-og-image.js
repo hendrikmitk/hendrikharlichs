@@ -1,21 +1,7 @@
 import waitOn from 'wait-on';
 import { exec } from 'child_process';
 import { chromium } from 'playwright';
-
-const articles = [
-	{
-		title: 'Speed up your workflow using Git aliases',
-		file: '2023-11-05-speed-up-your-workflow-using-git-aliases.png'
-	},
-	{
-		title: 'Build a static Markdown blog with SvelteKit',
-		file: '2023-06-17-build-a-static-markdown-blog-with-sveltekit.png'
-	},
-	{
-		title: 'Hello World',
-		file: '2023-04-26-hello-world.png'
-	}
-];
+import { readdirSync, readFileSync } from 'fs';
 
 const options = {
 	protocol: 'http',
@@ -24,7 +10,27 @@ const options = {
 	timeout: 10000
 };
 
-const url = `${options.protocol}://${options.host}:${options.port}/og-image`;
+const url = `${options.protocol}://${options.host}:${options.port}/og-imageData`;
+
+const generateImagesMetadata = () => {
+	const postsDir = './src/lib/posts';
+
+	const notes = readdirSync(postsDir).map((fileName) => {
+		const data = readFileSync(`${postsDir}/${fileName}`, 'utf8');
+
+		return {
+			title: data.split('\n')[1].substring(7),
+			file: fileName.slice(0, -3) + '.png'
+		};
+	});
+
+	notes.push({
+		title: 'Hendrik Harlichs',
+		file: 'share.png'
+	});
+
+	return notes;
+};
 
 let server;
 
@@ -54,14 +60,14 @@ const main = async () => {
 
 	const page = await browser.newPage();
 
-	for (let article of articles) {
+	for (let imageData of generateImagesMetadata()) {
 		const query = new URLSearchParams();
-		query.append('title', article.title);
+		query.append('title', imageData.title);
 
 		await page.goto(`${url}?${query}`);
 		await page
 			.locator('.og__image')
-			.screenshot({ path: `static/${article.file}` });
+			.screenshot({ path: `static/${imageData.file}` });
 	}
 
 	await browser.close();

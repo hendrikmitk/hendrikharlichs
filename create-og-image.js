@@ -32,7 +32,7 @@ const main = async () => {
 	console.info('[INFO] Building SvelteKit application ...');
 
 	server = exec(
-		`npm run build && npm run preview -- --port ${options.port}`,
+		`npm run build && npm run preview -- --host --port ${options.port}`,
 		(error) => {
 			if (error) {
 				console.error(error);

@@ -30,11 +30,12 @@ npm run build
 npm run preview
 ```
 
-### Create blog post template
+### Create blog post template and og image
 
 ```bash
 ./create-post.sh 'Hello World'
 # src/lib/posts/2023-10-27-hello-world.md
+# static/2023-10-27-hello-world.png
 ```
 
 ## Recommended IDE Setup

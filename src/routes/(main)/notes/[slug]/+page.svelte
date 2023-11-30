@@ -65,6 +65,10 @@
 			padding-top: 1.25rem;
 		}
 
+		@media print {
+			padding-top: 0.75rem;
+		}
+
 		&::before {
 			@include no-print();
 			background-color: var(--color--page-accent);

@@ -72,7 +72,9 @@ const main = async () => {
 		const query = new URLSearchParams();
 		query.append('title', imageData.title);
 
-		await page.goto(`${url}?${query}`);
+		await page.goto(`${url}?${query}`, {
+			waitUntil: 'domcontentloaded'
+		});
 		await page
 			.locator('.og__image')
 			.screenshot({ path: `static/${imageData.file}` });

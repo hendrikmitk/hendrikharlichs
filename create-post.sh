@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "[INFO] Creating Markdown file ..."
+
 DATE=$(date +"%Y-%m-%d")
 TITLE="$@"
 FILE_NAME="$DATE-$(printf "$TITLE" | tr -d "[:punct:]" | xargs | tr " " "-" | tr "[A-Z]" "[a-z]").md"
@@ -14,3 +16,7 @@ draft: true
 ---
 
 EOF
+
+echo "[SUCCESS] Markdown file created successfully"
+
+node create-og-image.js

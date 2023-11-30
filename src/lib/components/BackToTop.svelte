@@ -26,6 +26,7 @@
 
 <style lang="scss">
 	button {
+		@include no-print();
 		:global(svg) {
 			height: 2.5em;
 			width: auto;

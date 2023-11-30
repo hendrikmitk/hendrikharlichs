@@ -66,6 +66,7 @@
 		}
 
 		&::before {
+			@include no-print();
 			background-color: var(--color--page-accent);
 			content: '';
 			height: 0.125rem;

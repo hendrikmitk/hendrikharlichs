@@ -39,6 +39,7 @@
 
 <style lang="scss">
 	header {
+		@include no-print();
 		background-color: var(--color--header-background);
 
 		@include for(phone-only) {

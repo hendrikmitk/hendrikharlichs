@@ -41,6 +41,7 @@ a {
 		}
 
 		&::after {
+			@include no-print();
 			background-color: var(--svg-color);
 			content: '';
 			display: inline-block;

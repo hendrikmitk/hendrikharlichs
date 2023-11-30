@@ -71,6 +71,7 @@
 
 <style lang="scss">
 	.footer {
+		@include no-print();
 		align-items: center;
 		display: flex;
 		flex-direction: column;

@@ -31,6 +31,7 @@
 <style lang="scss">
 	@include for(tablet-and-up) {
 		div {
+			@include no-print();
 			background-color: var(--color--page-accent);
 			height: 0.375rem;
 			inset: 0 auto auto 0;

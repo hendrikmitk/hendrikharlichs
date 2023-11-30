@@ -33,3 +33,11 @@
 @mixin define-color($title, $color) {
 	--color--#{$title}: #{$color};
 }
+
+/* Hide element when printing */
+@mixin no-print() {
+	@media print {
+		display: none;
+		visibility: hidden;
+	}
+}

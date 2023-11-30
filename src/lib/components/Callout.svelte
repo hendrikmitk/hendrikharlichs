@@ -44,6 +44,7 @@
 		}
 
 		.icon {
+			@include no-print();
 			:global(svg) {
 				height: 3rem;
 				width: auto;

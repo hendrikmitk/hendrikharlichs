@@ -10,7 +10,7 @@ const options = {
 	timeout: 10000
 };
 
-const url = `${options.protocol}://${options.host}:${options.port}/og-imageData`;
+const url = `${options.protocol}://${options.host}:${options.port}/og-image`;
 
 const generateImagesMetadata = () => {
 	const postsDir = './src/lib/posts';

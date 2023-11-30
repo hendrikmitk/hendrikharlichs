@@ -58,9 +58,17 @@ const main = async () => {
 
 	console.info('[INFO] Start generating OG images ...');
 
+	const staticFiles = readdirSync('./static');
+
 	const page = await browser.newPage();
 
 	for (let imageData of generateImagesMetadata()) {
+		if (staticFiles.includes(imageData.file)) {
+			console.info(`[INFO] Image ${imageData.file} already exist`);
+			continue;
+		}
+		console.info(`[INFO] Creating image ${imageData.file} ...`);
+
 		const query = new URLSearchParams();
 		query.append('title', imageData.title);
 

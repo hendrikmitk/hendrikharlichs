@@ -56,5 +56,8 @@
 		],
 		"silent": true
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@vercel/speed-insights": "^1.0.3"
+	}
 }

@@ -64,9 +64,6 @@
 			rel="external noopener noreferrer">Source Code</a
 		>
 	</div>
-	<small class="footer__disclaimer">
-		No tracking. No cookies. No visit logs.
-	</small>
 </footer>
 
 <style lang="scss">

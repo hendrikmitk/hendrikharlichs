@@ -7,6 +7,9 @@
 
 	import { onMount } from 'svelte';
 	import { preloadCode } from '$app/navigation';
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+
+	injectSpeedInsights();
 
 	export let data;
 

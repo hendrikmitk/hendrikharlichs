@@ -32,13 +32,13 @@ const render = (
 ${posts
 	.map(
 		(post) => `<item>
-    <guid isPermaLink="true">${siteBaseUrl}/notes/${post.slug}</guid>
-    <title>${post.title}</title>
-    <link>${siteBaseUrl}/notes/${post.slug}</link>
-    <description>${post.summary}</description>
-    <pubDate>${new Date(post.created).toUTCString()}</pubDate>
-    </item>`
+  <guid isPermaLink="true">${siteBaseUrl}/notes/${post.slug}</guid>
+  <title>${post.title}</title>
+  <link>${siteBaseUrl}/notes/${post.slug}</link>
+  <description>${post.summary}</description>
+  <pubDate>${new Date(post.created).toUTCString()}</pubDate>
+</item>
+`
 	)
-	.join('')}
-</channel>
+	.join('')}</channel>
 </rss>`;

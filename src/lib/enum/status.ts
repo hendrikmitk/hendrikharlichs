@@ -1,5 +1,5 @@
 export const enum SubmissionStatus {
-	Submitting = 1,
-	Failed,
-	Success
+	Submitting = 'submitting',
+	Failed = 'failed',
+	Success = 'success'
 }

@@ -50,6 +50,7 @@
 				content: '';
 				inset: 0;
 				transition: all 0.4s ease-in-out;
+				z-index: 1;
 			}
 
 			&::before {
@@ -102,7 +103,7 @@
 					inset: 0;
 					margin-top: 10rem;
 					position: absolute;
-					z-index: 1;
+					z-index: 2;
 				}
 
 				@include for(tablet-and-up) {

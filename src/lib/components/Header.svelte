@@ -101,7 +101,7 @@
 					flex-direction: column;
 					gap: 2.5rem;
 					inset: 0;
-					margin-top: 10rem;
+					margin-top: 8rem;
 					position: absolute;
 					z-index: 2;
 				}

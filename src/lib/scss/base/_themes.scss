@@ -29,7 +29,16 @@
 	@include define-color('tag-secondary-text', $heavy-metal-armor);
 
 	@include define-color('error', $capocollo);
+	@include define-color('progress', $pixel-white);
+	@include define-color('success', $lady-luck);
 	@include define-color('warning', $gold-abundance);
+
+	@include define-color('form-input-border', $pixel-white);
+	@include define-color('form-input-focus-outline', $ice-ice-baby);
+	@include define-color('form-input-placeholder', $heavy-metal-armor);
+
+	@include define-color('form-button-accent', $ice-ice-baby);
+	@include define-color('form-button-invert', $doctor-white);
 }
 
 :root {

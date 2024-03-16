@@ -1,5 +1,5 @@
 export default interface Submission {
-	name: string;
-	email: string;
-	message: string;
+	name: string | undefined;
+	email: string | undefined;
+	message: string | undefined;
 }

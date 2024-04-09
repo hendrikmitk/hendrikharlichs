@@ -13,6 +13,8 @@
 </script>
 
 <div
+	role="button"
+	tabindex="0"
 	on:click={handleLinkClick}
 	on:keydown={handleLinkClick}
 	class:is-active={$isMenuOpen}

@@ -6,7 +6,7 @@ export interface Skill {
 export interface Position {
 	dateBegin: string;
 	dateEnd?: string;
-	description: string;
+	description?: string;
 	duties?: string[];
 	jobTitle: string;
 	skills?: Skill[];

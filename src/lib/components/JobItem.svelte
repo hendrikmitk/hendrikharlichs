@@ -3,6 +3,7 @@
 	import { formatDate } from '$lib/utils';
 	import SkillList from '$lib/components/SkillList.svelte';
 	import CalendarIcon from '$lib/icons/Calendar.svelte';
+	import { description } from '$lib/data';
 
 	export let job: Employer;
 </script>
@@ -18,9 +19,11 @@
 		{#each job.positions as position}
 			<li class="position">
 				<h3 class="position__title">{position.jobTitle}</h3>
-				<p class="position__description">
-					{position.description}
-				</p>
+				{#if position.description}
+					<p class="position__description">
+						{position.description}
+					</p>
+				{/if}
 				{#if position.duties}
 					<ul class="position__duties">
 						{#each position.duties as duty}

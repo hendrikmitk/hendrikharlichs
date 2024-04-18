@@ -6,7 +6,7 @@ export const jobs: Employer[] = [
 		location: 'Hamburg',
 		positions: [
 			{
-				dateBegin: '2022-05',
+				dateBegin: '2024-04',
 				dateEnd: undefined,
 				description:
 					'Development and operation of the comparison and application platform for public health insurers.',
@@ -16,7 +16,7 @@ export const jobs: Employer[] = [
 					'Cooperation with product management and MD to drive customer value',
 					'Maintenance of CI/CD pipelines to increase automation level and pace'
 				],
-				jobTitle: 'Junior Software Developer',
+				jobTitle: 'Professional Software Developer',
 				skills: [
 					{
 						label: 'Angular',
@@ -55,6 +55,12 @@ export const jobs: Employer[] = [
 						highlight: false
 					}
 				]
+			},
+			{
+				dateBegin: '2022-05',
+				dateEnd: '2024-03',
+				description: undefined,
+				jobTitle: 'Junior Software Developer'
 			}
 		],
 		url: 'https://jobs.check24.de/'

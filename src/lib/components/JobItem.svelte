@@ -3,7 +3,6 @@
 	import { formatDate } from '$lib/utils';
 	import SkillList from '$lib/components/SkillList.svelte';
 	import CalendarIcon from '$lib/icons/Calendar.svelte';
-	import { description } from '$lib/data';
 
 	export let job: Employer;
 </script>

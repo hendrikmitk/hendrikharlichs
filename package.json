@@ -52,6 +52,9 @@
 		"vite": "^5.2.8",
 		"wait-on": "^7.2.0"
 	},
+	"overrides": {
+		"cookie": "^0.7.2"
+	},
 	"pre-commit": {
 		"run": [
 			"lint"

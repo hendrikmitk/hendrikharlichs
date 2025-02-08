@@ -36,7 +36,6 @@
 		"markdown-to-txt": "^2.0.1",
 		"mdsvex": "^0.11.0",
 		"playwright": "^1.43.0",
-		"pre-commit": "^1.2.2",
 		"prettier": "^2.8.8",
 		"prettier-plugin-svelte": "^2.10.1",
 		"reading-time-estimator": "^1.11.0",
@@ -54,12 +53,6 @@
 	},
 	"overrides": {
 		"cookie": "^0.7.2"
-	},
-	"pre-commit": {
-		"run": [
-			"lint"
-		],
-		"silent": true
 	},
 	"type": "module",
 	"dependencies": {

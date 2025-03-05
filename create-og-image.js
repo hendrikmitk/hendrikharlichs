@@ -7,7 +7,7 @@ const options = {
 	protocol: 'http',
 	host: '127.0.0.1',
 	port: 4174,
-	timeout: 10000
+	timeout: 60000
 };
 
 const url = `${options.protocol}://${options.host}:${options.port}/og-image`;

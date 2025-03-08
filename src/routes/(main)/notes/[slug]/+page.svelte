@@ -4,12 +4,13 @@
 
 	export let data;
 
-	const { content, created, slug, summary, title, updated } = data;
+	const { content, created, slug, summary, keywords, title, updated } = data;
 </script>
 
 <svelte:head>
 	<title>{title} | {siteTitle}</title>
 	<meta data-key="description" name="description" content={summary} />
+	<meta name="keywords" content={keywords} />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content="{title} | {siteTitle}" />
 	<meta property="og:description" content={summary} />

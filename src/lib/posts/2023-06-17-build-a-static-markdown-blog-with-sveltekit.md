@@ -3,6 +3,7 @@ title: Build a static Markdown blog with SvelteKit
 created: 2023-09-24
 updated:
 summary: I recently did a makeover of my personal website and kicked off this blog. This post is about the process of creating this site and a few interesting things I learned while putting it together.
+keywords: SvelteKit, Svelte, static site generation, SvelteKit blog, Markdown blog, build a blog with SvelteKit, static Markdown blog, SvelteKit SSG
 draft: false
 ---
 

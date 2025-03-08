@@ -3,6 +3,7 @@ title: Speed up your workflow using Git aliases
 created: 2023-11-07
 updated:
 summary: What was that neat Git command from the other day again? The power of complex but often cumbersome Git commands, always at your fingertips with the help of Git aliases.
+keywords: Git, Git aliases, Git shortcuts, Git workflow, speed up Git, Git automation, Git config, Git configuration file, Git Bash aliases, Git Zsh aliases, Git productivity, version control efficiency
 draft: false
 ---
 

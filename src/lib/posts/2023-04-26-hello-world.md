@@ -3,6 +3,7 @@ title: Hello World
 created: 2023-04-26
 updated: 2023-05-13
 summary: My first blog ever. A place to share my experiences and thoughts.
+keywords: developer blog, tech blog, coding experiences, programming blog
 draft: false
 ---
 

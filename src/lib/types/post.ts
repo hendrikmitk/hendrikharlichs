@@ -10,6 +10,7 @@ export default interface Post {
 	readingTime: ReadingTime;
 	slug: string;
 	summary: string;
+	keywords: string;
 	title: string;
 	updated?: string;
 }

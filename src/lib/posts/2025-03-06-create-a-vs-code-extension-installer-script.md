@@ -3,6 +3,7 @@ title: Create a VS Code extension installer script
 created: 2025-03-06
 updated:
 summary: Automate the backup and installation of VS Code extensions using its command-line interface and a simple Bash script. A lightweight alternative to extension sync tools like Settings Sync.
+keywords: VS Code, Visual Studio Code, VS Code extensions, backup VS Code extensions, install VS Code extensions, VS Code extension script, automate VS Code setup, VS Code settings backup
 draft: false
 ---
 

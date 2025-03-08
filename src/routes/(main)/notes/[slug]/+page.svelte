@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { siteTitle } from '$lib/config';
+	import { defaultAuthor, siteTitle } from '$lib/config';
 	import { formatDate } from '$lib/utils';
 
 	export let data;
@@ -11,6 +11,7 @@
 	<title>{title} | {siteTitle}</title>
 	<meta data-key="description" name="description" content={summary} />
 	<meta name="keywords" content={keywords} />
+	<meta name="author" content={defaultAuthor} />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content="{title} | {siteTitle}" />
 	<meta property="og:description" content={summary} />

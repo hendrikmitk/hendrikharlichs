@@ -12,7 +12,7 @@
 <svelte:head>
 
 <title>Notes | { siteTitle }</title>
-<meta data-key="description" name="description" content={description} />
+<meta name="description" content={description} />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Notes | { siteTitle }" />
 <meta property="og:description" content={description} />

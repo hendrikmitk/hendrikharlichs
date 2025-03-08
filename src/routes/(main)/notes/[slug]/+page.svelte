@@ -9,7 +9,7 @@
 
 <svelte:head>
 	<title>{title} | {siteTitle}</title>
-	<meta data-key="description" name="description" content={summary} />
+	<meta name="description" content={summary} />
 	<meta name="keywords" content={keywords} />
 	<meta name="author" content={defaultAuthor} />
 	<meta property="og:type" content="article" />

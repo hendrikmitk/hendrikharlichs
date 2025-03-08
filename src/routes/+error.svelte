@@ -7,7 +7,7 @@
 
 <svelte:head>
 	<title>Error | {siteTitle}</title>
-	<meta data-key="description" name="description" content={description} />
+	<meta name="description" content={description} />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Error | {siteTitle}" />
 	<meta property="og:description" content={description} />

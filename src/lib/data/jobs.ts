@@ -59,8 +59,49 @@ export const jobs: Employer[] = [
 			{
 				dateBegin: '2022-05',
 				dateEnd: '2024-03',
-				description: undefined,
-				jobTitle: 'Junior Software Developer'
+				description:
+					'Gaining hands-on experience in building and maintaining a large enterprise application.',
+				duties: [
+					'Develop features to enhance the comparison platform',
+					'Build expertise in PHP, MySQL, Angular and TypeScript',
+					'Apply agile methodologies and clean code principles',
+					'Acquire insights into software architecture patterns'
+				],
+				jobTitle: 'Junior Software Developer',
+				skills: [
+					{
+						label: 'Angular',
+						highlight: true
+					},
+					{
+						label: 'TypeScript',
+						highlight: true
+					},
+					{
+						label: 'RxJS',
+						highlight: false
+					},
+					{
+						label: 'NgRx',
+						highlight: false
+					},
+					{
+						label: 'PHP',
+						highlight: false
+					},
+					{
+						label: 'MySQL',
+						highlight: false
+					},
+					{
+						label: 'HTML',
+						highlight: true
+					},
+					{
+						label: 'CSS',
+						highlight: true
+					}
+				]
 			}
 		],
 		url: 'https://jobs.check24.de/'

@@ -50,6 +50,7 @@
 				content: '';
 				inset: 0;
 				transition: all 0.4s ease-in-out;
+				z-index: 1;
 			}
 
 			&::before {

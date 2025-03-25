@@ -9,12 +9,12 @@ export interface Position {
 	description?: string;
 	duties?: string[];
 	jobTitle: string;
+	location: string;
 	skills?: Skill[];
 }
 
 export default interface Employer {
 	company: string;
-	location: string;
 	positions: Position[];
 	url: string;
 }

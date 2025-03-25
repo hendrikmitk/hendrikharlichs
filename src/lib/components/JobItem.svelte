@@ -3,6 +3,7 @@
 	import { formatDate } from '$lib/utils';
 	import SkillList from '$lib/components/SkillList.svelte';
 	import CalendarIcon from '$lib/icons/Calendar.svelte';
+	import LocationIcon from '$lib/icons/Location.svelte';
 
 	export let job: Employer;
 </script>
@@ -33,23 +34,29 @@
 				{#if position.skills}
 					<SkillList skills={position.skills} />
 				{/if}
-				<small class="position__meta">
-					<CalendarIcon />
-					{#if position.dateEnd}
-						<time datetime={position.dateBegin}>
-							{formatDate(position.dateBegin, 'short')}
-						</time>
-						–
-						<time datetime={position.dateEnd}>
-							{formatDate(position.dateEnd, 'short')}
-						</time>
-					{:else}
-						Since
-						<time datetime={position.dateBegin}>
-							{formatDate(position.dateBegin, 'short')}
-						</time>
-					{/if}
-				</small>
+				<div class="position__meta">
+					<small class="position__meta--item">
+						<CalendarIcon />
+						{#if position.dateEnd}
+							<time datetime={position.dateBegin}>
+								{formatDate(position.dateBegin, 'short')}
+							</time>
+							–
+							<time datetime={position.dateEnd}>
+								{formatDate(position.dateEnd, 'short')}
+							</time>
+						{:else}
+							Since
+							<time datetime={position.dateBegin}>
+								{formatDate(position.dateBegin, 'short')}
+							</time>
+						{/if}
+					</small>
+					<small class="position__meta--item">
+						<LocationIcon />
+						<span>{position.location}</span>
+					</small>
+				</div>
 			</li>
 		{/each}
 	</ul>
@@ -88,13 +95,18 @@
 		}
 
 		&__meta {
-			align-items: center;
 			display: flex;
-			gap: 0.25rem;
+			gap: 0.5rem;
 
-			:global(svg) {
-				height: 1rem;
-				width: auto;
+			&--item {
+				align-items: center;
+				display: flex;
+				gap: 0.25rem;
+
+				:global(svg) {
+					height: 1rem;
+					width: auto;
+				}
 			}
 		}
 

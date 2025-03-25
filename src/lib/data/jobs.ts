@@ -3,7 +3,6 @@ import type { Employer } from '$lib/types';
 export const jobs: Employer[] = [
 	{
 		company: 'CHECK24',
-		location: 'Hamburg',
 		positions: [
 			{
 				dateBegin: '2024-04',
@@ -17,6 +16,7 @@ export const jobs: Employer[] = [
 					'Maintenance of CI/CD pipelines to increase automation level and pace'
 				],
 				jobTitle: 'Professional Software Developer',
+				location: 'Hamburg, on-site',
 				skills: [
 					{
 						label: 'Angular',
@@ -68,6 +68,7 @@ export const jobs: Employer[] = [
 					'Acquire insights into software architecture patterns'
 				],
 				jobTitle: 'Junior Software Developer',
+				location: 'Hamburg, hybrid',
 				skills: [
 					{
 						label: 'Angular',
@@ -108,7 +109,6 @@ export const jobs: Employer[] = [
 	},
 	{
 		company: 'appmotion',
-		location: 'Hamburg',
 		positions: [
 			{
 				dateBegin: '2021-07',
@@ -116,6 +116,7 @@ export const jobs: Employer[] = [
 				description:
 					'Implementation of different projects for customers in the automotive and orthopedic industry.',
 				jobTitle: 'Junior Frontend Developer',
+				location: 'Hamburg, hybrid',
 				skills: [
 					{
 						label: 'Vue.js',
@@ -152,7 +153,6 @@ export const jobs: Employer[] = [
 	},
 	{
 		company: 'FFW',
-		location: 'Hamburg',
 		positions: [
 			{
 				dateBegin: '2020-02',
@@ -164,14 +164,16 @@ export const jobs: Employer[] = [
 					'Supervision of the launch and development of a multimodal mobility app',
 					'Planning, implementation and monitoring of individual project phases'
 				],
-				jobTitle: 'Project Manager'
+				jobTitle: 'Project Manager',
+				location: 'Hamburg, on-site'
 			},
 			{
 				dateBegin: '2017-07',
 				dateEnd: '2020-01',
 				description:
 					'Requirements engineering as well as technical supervision and release planning for the ongoing development of the on-board and landside infotainment infrastructure of a leading cruise line.',
-				jobTitle: 'Product Owner'
+				jobTitle: 'Product Owner',
+				location: 'Hamburg, on-site'
 			}
 		],
 		url: 'https://ffw.com/'

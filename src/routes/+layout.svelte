@@ -20,7 +20,8 @@
 	$: canonicalUrl = new URL(data.path, siteBaseUrl).href;
 
 	onMount(() => {
-		preloadCode(...navItems.map((item) => item.route), '/');
+		navItems.forEach((item) => preloadCode(item.route));
+		preloadCode('/');
 		printConsoleMessage();
 	});
 </script>

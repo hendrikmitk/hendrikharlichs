@@ -9,7 +9,7 @@
 	import { dev } from '$app/environment';
 	import { preloadCode } from '$app/navigation';
 	import { inject } from '@vercel/analytics';
-	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+	import { injectSpeedInsights } from '@vercel/speed-insights';
 
 	inject({ mode: dev ? 'development' : 'production' });
 	injectSpeedInsights();

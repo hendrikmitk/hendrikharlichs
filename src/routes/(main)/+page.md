@@ -18,7 +18,7 @@
 
 # Hi, I am Hendrik Harlichs.
 
-I am a **Software Developer** living in Hamburg, Germany. I currently work at <a href="https://jobs.check24.de/" target="_blank" rel="external noopener noreferrer">CHECK24</a> where I am mainly dealing with the ins and outs of Angular, TypeScript and PHP. I build stuff on the web using both established and cutting-edge technologies, however, I have a soft spot for the front-end.
+I am a **Software Developer** from Hamburg, Germany, currently working at <a href="https://www.awork.com/" target="_blank" rel="external noopener noreferrer">awork</a> as a Full-Stack Growth Engineer. Together with my team, I focus on increasing user conversion, engagement, and retention by building thoughtful features and experiments within a modern Angular application.
 
 I have been a project manager, product owner, online editor, and even a car mechanic, but solving real-world problems while building useful, value-added web applications is what I enjoy the most!
 

@@ -2,11 +2,64 @@ import type { Employer } from '$lib/types';
 
 export const jobs: Employer[] = [
 	{
+		company: 'awork',
+		positions: [
+			{
+				dateBegin: '2025-05',
+				dateEnd: undefined,
+				description:
+					'Working on features and experiments to improve conversion and retention in a SaaS product.',
+				duties: [
+					'Development of scalable features in a large, state-of-the-art Angular 18+ B2B application',
+					'Collaboration with product, marketing, and sales to identify and validate growth opportunities',
+					'Implementation of growth initiatives including A/B tests and onboarding improvements'
+				],
+				jobTitle: 'Full-Stack Growth Engineer',
+				location: 'Hamburg, hybrid',
+				skills: [
+					{
+						label: 'Angular',
+						highlight: true
+					},
+					{
+						label: 'TypeScript',
+						highlight: true
+					},
+					{
+						label: 'CSS',
+						highlight: false
+					},
+					{
+						label: 'Figma',
+						highlight: false
+					},
+					{
+						label: 'GitHub',
+						highlight: false
+					},
+					{
+						label: 'HTML',
+						highlight: false
+					},
+					{
+						label: 'Mixpanel',
+						highlight: false
+					},
+					{
+						label: 'Nx',
+						highlight: false
+					}
+				]
+			}
+		],
+		url: 'https://www.awork.com/jobs'
+	},
+	{
 		company: 'CHECK24',
 		positions: [
 			{
 				dateBegin: '2024-04',
-				dateEnd: undefined,
+				dateEnd: '2025-04',
 				description:
 					'Development and operation of the comparison and application platform for public health insurers.',
 				duties: [

@@ -23,7 +23,7 @@
 		"sitemap": "svelte-sitemap --out-dir .vercel/output/static --domain https://hendrikharlichs.de"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-vercel": "^4.0.5",
+		"@sveltejs/adapter-vercel": "^5.8.2",
 		"@sveltejs/kit": "^2.5.5",
 		"@sveltejs/vite-plugin-svelte": "^3.0.2",
 		"@types/eslint": "^8.56.7",

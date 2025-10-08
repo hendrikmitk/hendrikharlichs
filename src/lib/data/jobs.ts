@@ -10,9 +10,11 @@ export const jobs: Employer[] = [
 				description:
 					'Working on features and experiments to improve conversion and retention in a SaaS product.',
 				duties: [
-					'Development of scalable features in a large, state-of-the-art Angular 18+ B2B application',
+					'Development of scalable features in a large, state-of-the-art Angular 20+ application',
 					'Collaboration with product, marketing, and sales to identify and validate growth opportunities',
-					'Implementation of growth initiatives including A/B tests and onboarding improvements'
+					'Implementation of growth initiatives including A/B tests and onboarding improvements',
+					'Leveraging AI tools to accelerate implementation speed and maintain code excellence',
+					'Building automations to optimize internal workflows and product processes'
 				],
 				jobTitle: 'Full-Stack Growth Engineer',
 				location: 'Hamburg, hybrid',
@@ -24,6 +26,10 @@ export const jobs: Employer[] = [
 					{
 						label: 'TypeScript',
 						highlight: true
+					},
+					{
+						label: 'Claude Code',
+						highlight: false
 					},
 					{
 						label: 'CSS',
@@ -42,11 +48,11 @@ export const jobs: Employer[] = [
 						highlight: false
 					},
 					{
-						label: 'Mixpanel',
+						label: 'MCP',
 						highlight: false
 					},
 					{
-						label: 'Nx',
+						label: 'n8n',
 						highlight: false
 					}
 				]

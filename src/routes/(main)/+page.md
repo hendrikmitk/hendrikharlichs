@@ -18,7 +18,7 @@
 
 # Hi, I am Hendrik Harlichs.
 
-I am a **Software Developer** from Hamburg, Germany, currently working at <a href="https://www.awork.com/" target="_blank" rel="external noopener noreferrer">awork</a> as a Full-Stack Growth Engineer. Together with my team, I focus on increasing user conversion, engagement, and retention by building thoughtful features and experiments within a modern Angular application.
+I am a **Software Developer** from Hamburg, Germany, currently working at <a href="https://www.awork.com/" target="_blank" rel="external noopener noreferrer">awork</a> as a Frontend Growth Engineer. Together with my team, I focus on increasing user conversion, engagement, and retention by building thoughtful features and experiments within a modern Angular application.
 
 I have been a project manager, product owner, online editor, and even a car mechanic, but solving real-world problems while building useful, value-added web applications is what I enjoy the most!
 

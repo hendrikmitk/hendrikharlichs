@@ -16,7 +16,7 @@ export const jobs: Employer[] = [
 					'Leveraging AI tools to accelerate implementation speed and maintain code excellence',
 					'Building automations to optimize internal workflows and product processes'
 				],
-				jobTitle: 'Full-Stack Growth Engineer',
+				jobTitle: 'Frontend Engineer (Growth)',
 				location: 'Hamburg, hybrid',
 				skills: [
 					{

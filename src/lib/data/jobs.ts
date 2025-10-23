@@ -28,10 +28,6 @@ export const jobs: Employer[] = [
 						highlight: true
 					},
 					{
-						label: 'Claude Code',
-						highlight: false
-					},
-					{
 						label: 'CSS',
 						highlight: false
 					},
@@ -45,14 +41,6 @@ export const jobs: Employer[] = [
 					},
 					{
 						label: 'HTML',
-						highlight: false
-					},
-					{
-						label: 'MCP',
-						highlight: false
-					},
-					{
-						label: 'n8n',
 						highlight: false
 					}
 				]

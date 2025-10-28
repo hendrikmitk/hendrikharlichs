@@ -11,6 +11,9 @@ Personal website and blog built with SvelteKit, TypeScript, and SCSS. Deployed o
 - Auto-format code: `npm run format`
 - Build for production: `npm run build`
 - Preview production build: `npm run preview`
+- Run end-to-end tests: `npm test`
+- Run tests with UI: `npm run test:ui`
+- Debug tests: `npm run test:debug`
 - Create new blog post: `./create-post.sh 'Post Title'`
 
 ## Project Layout
@@ -135,7 +138,12 @@ draft: false
 
 ### Testing
 
-- No automated tests currently configured
+- **End-to-end tests** with Playwright in `tests/` directory
+  - `navigation.spec.ts` - Tests desktop navigation between pages
+  - `mobile-navigation.spec.ts` - Tests mobile hamburger menu and navigation
+  - `content.spec.ts` - Tests content rendering and SEO meta tags
+- Tests run against production build (`npm run build && npm run preview`)
+- Browsers: Chromium (desktop) and iPhone 12 (mobile)
 - Verify builds with `npm run build` before deploying
 - Check type-safety with `npm run check`
 

@@ -10,9 +10,15 @@
 	import { preloadCode } from '$app/navigation';
 	import { inject } from '@vercel/analytics';
 	import { injectSpeedInsights } from '@vercel/speed-insights';
+	import { env } from '$env/dynamic/public';
 
-	inject({ mode: dev ? 'development' : 'production' });
-	injectSpeedInsights();
+	// Do not inject Vercel analytics when running tests
+	const isTesting = env.PUBLIC_PLAYWRIGHT_TEST === 'true';
+
+	if (!isTesting) {
+		inject({ mode: dev ? 'development' : 'production' });
+		injectSpeedInsights();
+	}
 
 	export let data;
 

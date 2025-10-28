@@ -1,27 +1,36 @@
 import type { Post } from '$lib/types';
 
 import { readingTime as readingTimeEstimator } from 'reading-time-estimator';
-import striptags from 'striptags';
 
 const getPosts = (): Post[] => {
 	const markdownFiles = import.meta.glob('/src/lib/posts/*md', {
+		eager: true,
+		query: '?raw',
+		import: 'default'
+	});
+
+	const allPostsMetadata = import.meta.glob('/src/lib/posts/*md', {
 		eager: true
 	});
 
 	const allPosts: Post[] = [];
 
-	for (const fullPath in markdownFiles) {
+	for (const fullPath in allPostsMetadata) {
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		const file = markdownFiles[fullPath] as any;
+		const file = allPostsMetadata[fullPath] as any;
 
 		if (!file) continue;
 
 		const metadata = file.metadata as Omit<Post, 'slug' | 'readingTime'>;
-		const strippedHtml: string = striptags(file.default.render().html);
+
+		// Get the raw markdown content for reading time estimation
+		const rawContent = markdownFiles[fullPath] as string;
+		// Remove frontmatter (everything between --- markers)
+		const contentWithoutFrontmatter = rawContent.replace(/^---[\s\S]*?---/, '');
 
 		const post = {
 			...metadata,
-			readingTime: readingTimeEstimator(strippedHtml, 238),
+			readingTime: readingTimeEstimator(contentWithoutFrontmatter, 238),
 			slug: fullPath.split('/').pop()?.slice(0, -3) || ''
 		} satisfies Post;
 

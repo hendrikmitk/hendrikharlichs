@@ -1,5 +1,3 @@
-@import './breakpoints';
-
 /* Media queries */
 @mixin for($size) {
 	@if $size == phone-only {

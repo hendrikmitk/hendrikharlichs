@@ -24,7 +24,7 @@
 
 <div style:width={progress + '%'}>
 	{#if !isHeaderInView}
-		<div style:width={100 - progress + '%'} />
+		<div style:width={100 - progress + '%'}></div>
 	{/if}
 </div>
 

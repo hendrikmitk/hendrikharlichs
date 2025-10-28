@@ -8,7 +8,7 @@ export default defineConfig({
 		preprocessorOptions: {
 			scss: {
 				loadPaths: [fileURLToPath(new URL('./src/lib/scss', import.meta.url))],
-				additionalData: `@import "abstracts/breakpoints"; @import "abstracts/mixins";`
+				additionalData: `@use "abstracts/breakpoints" as *; @use "abstracts/mixins" as *;`
 			}
 		}
 	}

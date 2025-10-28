@@ -1,4 +1,5 @@
-@import '../abstracts/mixins';
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
 
 @mixin base-theme {
 	@include define-color('header-background', $hadopelagic-water);

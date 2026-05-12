@@ -8,15 +8,17 @@ export const jobs: Employer[] = [
 				dateBegin: '2025-05',
 				dateEnd: undefined,
 				description:
-					'Working on features and experiments to improve conversion and retention in a SaaS product.',
+					'Working on product features and experiments to improve conversion, activation, and retention in a SaaS product — with a strong focus on frontend engineering and AI-assisted full-stack development.',
 				duties: [
-					'Development of scalable features in a large, state-of-the-art Angular 20+ application',
-					'Collaboration with product, marketing, and sales to identify and validate growth opportunities',
-					'Implementation of growth initiatives including A/B tests and onboarding improvements',
-					'Leveraging AI tools to accelerate implementation speed and maintain code excellence',
-					'Building automations to optimize internal workflows and product processes'
+					'Development of scalable product features in a large, modern Angular 20+ application',
+					'Contribution to full-stack features, backend logic, and API changes using C# and .NET',
+					'Collaboration with product, marketing, and sales on high-impact growth opportunities',
+					'Implementation of A/B tests, onboarding improvements, and conversion-focused flows',
+					'Thoughtful use of AI-assisted tools for implementation, refactoring, and code quality',
+					'Exposure to CI/CD workflows using GitHub Actions and Azure-based Kubernetes setups',
+					'Building automations to optimize internal workflows and improve product processes'
 				],
-				jobTitle: 'Frontend Engineer (Growth)',
+				jobTitle: 'Full-Stack Engineer (Growth)',
 				location: 'Hamburg, hybrid',
 				skills: [
 					{
@@ -28,19 +30,19 @@ export const jobs: Employer[] = [
 						highlight: true
 					},
 					{
-						label: 'CSS',
+						label: 'C# + .NET',
 						highlight: false
 					},
 					{
-						label: 'Figma',
+						label: 'CI/CD',
 						highlight: false
 					},
 					{
-						label: 'GitHub',
+						label: 'GitHub Actions',
 						highlight: false
 					},
 					{
-						label: 'HTML',
+						label: 'Coding Agents',
 						highlight: false
 					}
 				]
